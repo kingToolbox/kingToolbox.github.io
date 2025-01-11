@@ -150,7 +150,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">127</span>
+          <span class="site-state-item-count">149</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -161,7 +161,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">110</span>
+        <span class="site-state-item-count">117</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -187,7 +187,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2021/03/11/proxy-jump-server/">
+    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2022/08/21/sysmon/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -205,334 +205,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/03/11/proxy-jump-server/" class="post-title-link" itemprop="url">WindTerm - Network Proxy / Jump Server</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-03-11 16:39:00 / Modified: 18:06:06" itemprop="dateCreated datePublished" datetime="2021-03-11T16:39:00+08:00">2021-03-11</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/WindTerm/" itemprop="url" rel="index"><span itemprop="name">WindTerm</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>WindTerm supports Jump Server proxy.</p>
-<p>Sometimes a remote server can only be accessed via ssh by first login into an intermediary server. So you need first login into to the intermediary server and then ssh to another server. And the chain can be long and is not limited to just two servers. OpenSSH supports jump server using ProxyCommand or ProxyJump with -W and -J options.</p>
-<p>WindTerm simplifies the connection. You only need to set the proxy type of the session to Jump Server, then you can specify the intermediate server in the configured sessions. Up to four intermediate servers can be specified at the same time.</p>
-<p>If you need to specify more than four intermediate servers, you can chain multiple intermediate servers. In this way, an <strong>unlimited</strong> number of intermediate servers can be supported.</p>
-<p>For example, when you need to specify six intermediate servers:<br><code>Host -&gt; Jump Server 6 -&gt; Jump Server 5 -&gt; Jump Server 4 -&gt; Jump Server 3 -&gt; Jump Server 2 -&gt; Jump Server 1 -&gt; Remote</code></p>
-<p>you can configure as follows:<br><code>Jump Server 3 -&gt; Jump Server 2 -&gt; Jump Server 1</code><br><code>Jump Server 6 -&gt; Jump Server 5 -&gt; Jump Server 4</code><br><code>Host -&gt; Jump Server 6 -&gt; Jump Server 3</code></p>
-<h1 id="Jump-Server"><a href="#Jump-Server" class="headerlink" title="Jump Server"></a>Jump Server</h1><p><img src="/img/jump_server.gif" alt="..."></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2021/03/11/proxy-http-socks5/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="KingToolbox">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="WindTerm and WindEdit">
-      <meta itemprop="description" content="Usage for WindTerm and WindEdit">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | WindTerm and WindEdit">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/03/11/proxy-http-socks5/" class="post-title-link" itemprop="url">WindTerm - Network Proxy / HTTP and SOCKS5 proxy</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-03-11 16:29:00 / Modified: 16:44:19" itemprop="dateCreated datePublished" datetime="2021-03-11T16:29:00+08:00">2021-03-11</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/WindTerm/" itemprop="url" rel="index"><span itemprop="name">WindTerm</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>WindTerm supports HTTP proxy and SOCKS5 proxy.</p>
-<p>SOCKS5 prxoy is usually equivalent to use OpenSSH ProxyCommand like <code>/usr/bin/nc -X 5 -x 127.0.0.1:7777 %h %p</code> to connect through socks5 proxy.</p>
-<p>The currently supported authentication methods are no authentication and username&#x2F;password authentication. Both IPv4 and IPv6 are supported. Domain names are resolved through the proxy server if the <strong>Perform DNS lookup with proxy</strong> is checked, otherwise they are resolved locally and the IP address is sent to the server.</p>
-<h1 id="Network-Porxy"><a href="#Network-Porxy" class="headerlink" title="Network Porxy"></a>Network Porxy</h1><p><img src="/img/network_proxy.png" alt="..."></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2020/11/13/search-online/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="KingToolbox">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="WindTerm and WindEdit">
-      <meta itemprop="description" content="Usage for WindTerm and WindEdit">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | WindTerm and WindEdit">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/11/13/search-online/" class="post-title-link" itemprop="url">WindTerm - Search Online</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2020-11-13 19:47:27 / Modified: 19:57:10" itemprop="dateCreated datePublished" datetime="2020-11-13T19:47:27+08:00">2020-11-13</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/WindTerm/" itemprop="url" rel="index"><span itemprop="name">WindTerm</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>The selection can be searched online, the default engines include Google, Bing, Github, Stackoverflow, Wikipedia, DuckDuckGo.</p>
-<h1 id="Search-Online"><a href="#Search-Online" class="headerlink" title="Search Online"></a>Search Online</h1><p><img src="/img/search_online.gif" alt="..."></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2020/11/13/windows-opacity/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="KingToolbox">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="WindTerm and WindEdit">
-      <meta itemprop="description" content="Usage for WindTerm and WindEdit">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | WindTerm and WindEdit">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/11/13/windows-opacity/" class="post-title-link" itemprop="url">WindTerm - Windows Opacity</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2020-11-13 18:59:00 / Modified: 19:57:09" itemprop="dateCreated datePublished" datetime="2020-11-13T18:59:00+08:00">2020-11-13</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/WindTerm/" itemprop="url" rel="index"><span itemprop="name">WindTerm</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>The windows opacity can be set from transparent to opauqe to facilitate reading the content below the window.</p>
-<h1 id="windows-Opacity"><a href="#windows-Opacity" class="headerlink" title="windows Opacity"></a>windows Opacity</h1><p><img src="/img/windows_opacity.gif" alt="..."></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2020/10/16/manual_logging/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="KingToolbox">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="WindTerm and WindEdit">
-      <meta itemprop="description" content="Usage for WindTerm and WindEdit">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | WindTerm and WindEdit">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/10/16/manual_logging/" class="post-title-link" itemprop="url">WindTerm - Logging / Manual Logging</a>
+          <a href="/2022/08/21/sysmon/" class="post-title-link" itemprop="url">WindTerm - Sysmon</a>
         </h2>
 
         <div class="post-meta-container">
@@ -543,14 +216,14 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2020-10-16 02:32:22" itemprop="dateCreated datePublished" datetime="2020-10-16T02:32:22+08:00">2020-10-16</time>
+      <time title="Created: 2022-08-21 12:23:41" itemprop="dateCreated datePublished" datetime="2022-08-21T12:23:41+08:00">2022-08-21</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2020-10-17 10:38:13" itemprop="dateModified" datetime="2020-10-17T10:38:13+08:00">2020-10-17</time>
+      <time title="Modified: 2022-08-22 17:07:19" itemprop="dateModified" datetime="2022-08-22T17:07:19+08:00">2022-08-22</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -572,108 +245,376 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>WindTerm supports start, stop, pause, resume and browse logging at any time. There are two ways perform manual logging:</p>
+          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p><code>Sysmon</code> allows you to monitor the usage of system resources such as the <code>time</code>, <code>uptime</code>, <code>CPU</code>, <code>memory</code>, <code>network</code>, etc. of the local machine or remote server.</p>
+<p><code>Sysmon</code> supports:</p>
 <ul>
-<li>Main windows’s menu - Session - Log</li>
-<li>Session view’s context menu - Log</li>
+<li>Linux (SSH, Shell)</li>
+<li>macOS (SSH, Shell)</li>
+<li>Cmd</li>
+<li>PowerShell</li>
+<li>Windows Subsystem for Linux</li>
 </ul>
-<p>You can start logging automatically upon connecting to the remote site also, please read <a href="/2020/10/16/automated_logging/" title="WindTerm - Logging &#x2F; Automated Logging">Automated Logging</a>.</p>
-<p>The following flags can be used in the log file name and each line when logging a session. </p>
-<table>
-<thead>
-<tr>
-<th>Flag</th>
-<th align="center">Output</th>
-<th align="right">Example</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>%a</td>
-<td align="center">Abbreviated weekday name</td>
-<td align="right">“Thu”</td>
-</tr>
-<tr>
-<td>%A</td>
-<td align="center">Full weekday name</td>
-<td align="right">“Thursday”</td>
-</tr>
-<tr>
-<td>%b</td>
-<td align="center">Abbreviated month name</td>
-<td align="right">“Aug”</td>
-</tr>
-<tr>
-<td>%B</td>
-<td align="center">Full month name</td>
-<td align="right">“August”</td>
-</tr>
-<tr>
-<td>%C</td>
-<td align="center">Year in 2 digits</td>
-<td align="right">“20”</td>
-</tr>
-<tr>
-<td>%d</td>
-<td align="center">Day of month 01-31</td>
-<td align="right">“29”</td>
-</tr>
-<tr>
-<td>%e</td>
-<td align="center">Millisecond part of the current second 000-999</td>
-<td align="right">“678”</td>
-</tr>
-<tr>
-<td>%H</td>
-<td align="center">Hours in 24 format 00-23</td>
-<td align="right">“23”</td>
-</tr>
-<tr>
-<td>%I</td>
-<td align="center">Hours in 12 format 01-12</td>
-<td align="right">“11”</td>
-</tr>
-<tr>
-<td>%M</td>
-<td align="center">Minutes 00-59</td>
-<td align="right">“59”</td>
-</tr>
-<tr>
-<td>%m</td>
-<td align="center">Month 01-12</td>
-<td align="right">“11”</td>
-</tr>
-<tr>
-<td>%n</td>
-<td align="center">Session name</td>
-<td align="right">“10.0.1.2”</td>
-</tr>
-<tr>
-<td>%p</td>
-<td align="center">AM&#x2F;PM</td>
-<td align="right">“PM”</td>
-</tr>
-<tr>
-<td>%S</td>
-<td align="center">Seconds 00-59</td>
-<td align="right">“58”</td>
-</tr>
-<tr>
-<td>%v</td>
-<td align="center">The actual text to log</td>
-<td align="right">“some session text”</td>
-</tr>
-<tr>
-<td>%Y</td>
-<td align="center">Year in 4 digits</td>
-<td align="right">“2020”</td>
-</tr>
-<tr>
-<td>%%</td>
-<td align="center">The % sign</td>
-<td align="right">“%”</td>
-</tr>
-</tbody></table>
-<h1 id="Logging"><a href="#Logging" class="headerlink" title="Logging"></a>Logging</h1><p><img src="/img/manual_logging.png" alt="..."></p>
+<h1 id="Sysmon"><a href="#Sysmon" class="headerlink" title="Sysmon"></a>Sysmon</h1><p><img src="/img/sysmon.gif" alt="..."></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2022/06/20/auto_completion_history_commands/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="KingToolbox">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WindTerm and WindEdit">
+      <meta itemprop="description" content="Usage for WindTerm and WindEdit">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | WindTerm and WindEdit">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/06/20/auto_completion_history_commands/" class="post-title-link" itemprop="url">WindTerm - Auto Completion / History Commands</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-06-20 03:28:05 / Modified: 03:34:59" itemprop="dateCreated datePublished" datetime="2022-06-20T03:28:05+08:00">2022-06-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/WindTerm/" itemprop="url" rel="index"><span itemprop="name">WindTerm</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>Auto completion supports <code>history commands</code>. <code>History commands</code> include not only the command history of the current session, but also the command history of all sessions of the same <code>System</code>, such as the <code>Linux</code> system. </p>
+<p>If and only if the <code>master password</code> is entered, the <code>history commands</code> can be encrypted and stored. The default maximum number of <code>history commands</code> is <code>10000</code>.</p>
+<p>If you only want to use the history commands for auto completion, you can：</p>
+<ul>
+<li>Type <code>!</code> at the beginning of the line.</li>
+<li>Use the shortcut key <code>Ctrl+R</code>.</li>
+</ul>
+<h1 id="Auto-Completion"><a href="#Auto-Completion" class="headerlink" title="Auto Completion"></a>Auto Completion</h1><ul>
+<li>History Commands<img src="/img/auto_completion_history_commands.gif" alt="..."></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2022/06/20/auto_completion_quick_commands/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="KingToolbox">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WindTerm and WindEdit">
+      <meta itemprop="description" content="Usage for WindTerm and WindEdit">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | WindTerm and WindEdit">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/06/20/auto_completion_quick_commands/" class="post-title-link" itemprop="url">WindTerm - Auto Completion / Quick Commands</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-06-20 03:20:05 / Modified: 03:28:45" itemprop="dateCreated datePublished" datetime="2022-06-20T03:20:05+08:00">2022-06-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/WindTerm/" itemprop="url" rel="index"><span itemprop="name">WindTerm</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>Auto completion supports <code>quick commands</code> from the <code>QuickBar</code>.</p>
+<h1 id="Auto-Completion"><a href="#Auto-Completion" class="headerlink" title="Auto Completion"></a>Auto Completion</h1><ul>
+<li>Quick Сommands<img src="/img/auto_completion_quick_commands.gif" alt="..."></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2022/05/18/auto_completion/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="KingToolbox">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WindTerm and WindEdit">
+      <meta itemprop="description" content="Usage for WindTerm and WindEdit">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | WindTerm and WindEdit">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/05/18/auto_completion/" class="post-title-link" itemprop="url">WindTerm - Auto Completion</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-05-18 20:00:05 / Modified: 18:58:28" itemprop="dateCreated datePublished" datetime="2022-05-18T20:00:05+08:00">2022-05-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/WindTerm/" itemprop="url" rel="index"><span itemprop="name">WindTerm</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>Auto completion suggests <code>commands</code>, <code>subcommands</code>, <code>command options</code>, <code>command parameters</code>, <code>history commands</code> and <code>quick commands</code> from the <code>QuickBar</code> that are currently available.</p>
+<p>Auto completion will recommend the most suitable parameters or phrases based on historical input, which greatly increases text input speed, because you don’t have to memorize a large number of commands and type every letter in a command. </p>
+<p>Auto completion supports:</p>
+<ul>
+<li>Linux Shell commands.</li>
+<li>MacOS Shell commands.</li>
+<li>Windows Cmd commands.</li>
+<li>PowerShell commands.</li>
+<li>Commands of any command line program, such as <code>Git</code></li>
+<li>Quick Commands from the <code>QuickBar</code></li>
+</ul>
+<h1 id="Auto-Completion"><a href="#Auto-Completion" class="headerlink" title="Auto Completion"></a>Auto Completion</h1><ul>
+<li>Linux Shell<img src="/img/auto_completion_linux.gif" alt="..."></li>
+<li>PowerShell<img src="/img/auto_completion_powershell.gif" alt="..."></li>
+<li>Windows Cmd<img src="/img/auto_completion_cmd.gif" alt="..."></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2022/04/12/free_type_mode/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="KingToolbox">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WindTerm and WindEdit">
+      <meta itemprop="description" content="Usage for WindTerm and WindEdit">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | WindTerm and WindEdit">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/04/12/free_type_mode/" class="post-title-link" itemprop="url">WindTerm - Free Type Mode</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-04-12 20:55:05 / Modified: 20:40:42" itemprop="dateCreated datePublished" datetime="2022-04-12T20:55:05+08:00">2022-04-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/WindTerm/" itemprop="url" rel="index"><span itemprop="name">WindTerm</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>Free type mode lets you using the mouse to quickly move the cursor, select text, and drag and drop text, either when typing shell commands, or in applications such as <code>VI</code>, <code>Emacs</code>, everything is as convenient as in a text editor.</p>
+<p>Free type mode supports:</p>
+<ul>
+<li>Any protocol and shell, including <code>SSH</code>, <code>Telnet</code>, <code>Serial</code>, <code>bash</code>, <code>cmd</code>, <code>powershell</code> etc.</li>
+<li>Move the cursor by <code>Alt + Mouse Click</code>.<br>For convenience, when the <code>Term</code> is <code>xterm</code> or <code>xterm-256color</code>, only a mouse click is required to move the cursor.</li>
+<li>For the current line containing the cursor:<ul>
+<li><code>alt + Mouse-drag</code>  to select text.</li>
+<li><code>alt + Double-click</code> to select a word.</li>
+<li><code>alt + Double-click</code> to select text between matching pairs.</li>
+<li><code>alt + Triple-click</code> to select the line.</li>
+<li><code>alt + Shift + Click</code> to select a piece of text.<br>For convenience, when the <code>Term</code> is <code>xterm</code> or <code>xterm-256color</code>, only the mouse is required and the <code>Alt</code> key is optional.</li>
+</ul>
+</li>
+<li>Overwrite, delete or move the selection.</li>
+<li>Duplicate the selection when pressing <code>Ctrl</code>.</li>
+</ul>
+<h1 id="Free-Type-Mode"><a href="#Free-Type-Mode" class="headerlink" title="Free Type Mode"></a>Free Type Mode</h1><p><img src="/img/free_type_mode.gif" alt="..."></p>
+<p><img src="/img/free_type_mode_pair.gif" alt="..."></p>
 
       
     </div>
@@ -693,7 +634,7 @@
 
 
   <nav class="pagination">
-    <a class="extend prev" rel="prev" title="Previous page" aria-label="Previous page" href="/page/10/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><span class="page-number current">11</span><a class="page-number" href="/page/12/">12</a><span class="space">&hellip;</span><a class="page-number" href="/page/26/">26</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/page/12/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" title="Previous page" aria-label="Previous page" href="/page/10/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><span class="page-number current">11</span><a class="page-number" href="/page/12/">12</a><span class="space">&hellip;</span><a class="page-number" href="/page/30/">30</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/page/12/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 </div>
@@ -704,7 +645,7 @@
 
   <div class="copyright">
     &copy; 2019 – 
-    <span itemprop="copyrightYear">2024</span>
+    <span itemprop="copyrightYear">2025</span>
     <span class="with-love">
       <i class="fa fa-heart"></i>
     </span>

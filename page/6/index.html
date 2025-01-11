@@ -150,7 +150,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">127</span>
+          <span class="site-state-item-count">149</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -161,7 +161,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">110</span>
+        <span class="site-state-item-count">117</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -187,7 +187,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2023/06/06/trigger_built-in_timestamp_converter/">
+    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2023/11/15/benchmark-sftp-transfer/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -205,7 +205,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/06/06/trigger_built-in_timestamp_converter/" class="post-title-link" itemprop="url">WindTerm - Trigger / Built-in / Timestamp Converter</a>
+          <a href="/2023/11/15/benchmark-sftp-transfer/" class="post-title-link" itemprop="url">WindTerm - Performance / Sftp Transfer</a>
         </h2>
 
         <div class="post-meta-container">
@@ -217,7 +217,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2023-06-06 08:12:18 / Modified: 22:22:57" itemprop="dateCreated datePublished" datetime="2023-06-06T08:12:18+08:00">2023-06-06</time>
+      <time title="Created: 2023-11-15 12:00:00 / Modified: 12:40:53" itemprop="dateCreated datePublished" datetime="2023-11-15T12:00:00+08:00">2023-11-15</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -239,161 +239,73 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p><code>Timestamp Converter</code> is one of the built-in triggers in <code>WindTerm</code>. It supports converting an 11 or 13-digit timestamp to ISO formatted time and displaying it in a tooltip, which brings great convenience for tasks such as reading logs.</p>
-<h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/trigger_built-in_timestamp_converter.gif" alt="..."></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2023/06/06/trigger_built-in_unarchiver/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="KingToolbox">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="WindTerm and WindEdit">
-      <meta itemprop="description" content="Usage for WindTerm and WindEdit">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | WindTerm and WindEdit">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/06/06/trigger_built-in_unarchiver/" class="post-title-link" itemprop="url">WindTerm - Trigger / Built-in / Unarchiver</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2023-06-06 08:08:08 / Modified: 22:31:51" itemprop="dateCreated datePublished" datetime="2023-06-06T08:08:08+08:00">2023-06-06</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/WindTerm/" itemprop="url" rel="index"><span itemprop="name">WindTerm</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p><code>Unarchiver</code> is one of the built-in triggers in <code>WindTerm</code>, which can recognize and tag commonly used formats of compressed files, allowing you to quickly input the corresponding decompression command by clicking on the link.</p>
-<p>The supported compression formats and their decompression commands are listed below:</p>
+          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>Sftp transfer has fast speed for uploading, downloading and deleting, especially for huge files and large number of small files.</p>
+<h1 id="Benchmark"><a href="#Benchmark" class="headerlink" title="Benchmark"></a>Benchmark</h1><p>The testing environment used for testing is as follows:<br><code>Hardware: 2.3 GHz Intel Core i5 and 8GB Memory</code><br><code>Software: WSL(Ubuntu 18.04.2), Windows 10</code></p>
 <table>
 <thead>
 <tr>
-<th>Format</th>
-<th align="center">Decompression Command</th>
+<th align="center">Application</th>
+<th align="center">Version</th>
+<th align="center">Release Data</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>.tar.bz2</td>
-<td align="center">tar -xvjf</td>
+<td align="center">WindTerm</td>
+<td align="center">v1.6.0 Prerelease 3</td>
+<td align="center">2023-11-15</td>
 </tr>
 <tr>
-<td>.tar.gz</td>
-<td align="center">tar -xvzf</td>
+<td align="center">FileZilla</td>
+<td align="center">v3.66.1</td>
+<td align="center">2023-11-03</td>
 </tr>
 <tr>
-<td>.tar.xz</td>
-<td align="center">tar -xvJf</td>
-</tr>
-<tr>
-<td>.bz2</td>
-<td align="center">bzip2 -d</td>
-</tr>
-<tr>
-<td>.ex</td>
-<td align="center">uncompress</td>
-</tr>
-<tr>
-<td>.exe</td>
-<td align="center">cabextract</td>
-</tr>
-<tr>
-<td>.gz</td>
-<td align="center">gzip -d</td>
-</tr>
-<tr>
-<td>.lzma</td>
-<td align="center">lzma -d</td>
-</tr>
-<tr>
-<td>.rar</td>
-<td align="center">unrar x</td>
-</tr>
-<tr>
-<td>.tar</td>
-<td align="center">tar -xvf</td>
-</tr>
-<tr>
-<td>.tbz2</td>
-<td align="center">tar -xvjf</td>
-</tr>
-<tr>
-<td>.tgz</td>
-<td align="center">tar -xvzf</td>
-</tr>
-<tr>
-<td>.xz</td>
-<td align="center">xz -d</td>
-</tr>
-<tr>
-<td>.zip</td>
-<td align="center">unzip</td>
-</tr>
-<tr>
-<td>.Z</td>
-<td align="center">uncompress</td>
-</tr>
-<tr>
-<td>.7z</td>
-<td align="center">7z</td>
+<td align="center">WinSCP</td>
+<td align="center">v6.1.2</td>
+<td align="center">2023-09-19</td>
 </tr>
 </tbody></table>
-<h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/trigger_built-in_unarchiver.gif" alt="..."></p>
+<p><strong>All applications use their default configurations, and test data is for reference only.</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">Benchmark: Transfer files</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><img src="/img/performance_sftp_transfer_file.png" alt="..."></td>
+</tr>
+<tr>
+<td align="center">Source file: A <code>vmdk</code> file.</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="center">Benchmark: Transfer folders</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><img src="/img/performance_sftp_transfer_folder.png" alt="..."></td>
+</tr>
+<tr>
+<td align="center">Source folder: The subfolder <code>src</code> within the <a target="_blank" rel="noopener" href="https://download.qt.io/official_releases/qt/5.15/5.15.2/submodules/qtbase-everywhere-src-5.15.2.zip">qtbase-everywhere-src-5.15.2.zip</a> file.</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="center">Benchmark: Remove folders</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><img src="/img/performance_sftp_transfer_remove_folder.png" alt="..."></td>
+</tr>
+<tr>
+<td align="center">Source folder: The subfolder <code>src</code> within the <a target="_blank" rel="noopener" href="https://download.qt.io/official_releases/qt/5.15/5.15.2/submodules/qtbase-everywhere-src-5.15.2.zip">qtbase-everywhere-src-5.15.2.zip</a> file.</td>
+</tr>
+</tbody></table>
+<h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/transfer_download_upload_benchmark.gif" alt="..."></p>
 
       
     </div>
@@ -420,7 +332,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2022/08/21/sync_terminal_folder/">
+    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2023/11/15/benchmark-local-transfer/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -438,7 +350,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/08/21/sync_terminal_folder/" class="post-title-link" itemprop="url">WindTerm - Sync Terminal Folder</a>
+          <a href="/2023/11/15/benchmark-local-transfer/" class="post-title-link" itemprop="url">WindTerm - Performance / Local Transfer</a>
         </h2>
 
         <div class="post-meta-container">
@@ -448,15 +360,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2022-08-21 13:08:05" itemprop="dateCreated datePublished" datetime="2022-08-21T13:08:05+08:00">2022-08-21</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-08-22 17:07:25" itemprop="dateModified" datetime="2022-08-22T17:07:25+08:00">2022-08-22</time>
+      <time title="Created: 2023-11-15 11:52:00 / Modified: 12:41:53" itemprop="dateCreated datePublished" datetime="2023-11-15T11:52:00+08:00">2023-11-15</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -478,15 +384,47 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p><code>Sync Terminal Folder</code> supports syncing the current working directory between <code>filer</code> and <code>terminal</code>. When you change directories in the <code>terminal</code>, <code>filer</code> should follow automatically and optionally, vice versa, the working directory of the <code>filer</code> can be quickly copied to the terminal.</p>
-<p><code>Sync Terminal Folder</code> supports:</p>
-<ul>
-<li>Copy directory path from filer to terminal.</li>
-<li>Manually sync terminal folder.</li>
-<li>Automatically sync terminal folder.</li>
-</ul>
-<p>Note that not all local or remote systems support <code>Sync Terminal Folder</code>.</p>
-<h1 id="Sync-Terminal-Folder"><a href="#Sync-Terminal-Folder" class="headerlink" title="Sync Terminal Folder"></a>Sync Terminal Folder</h1><p><img src="/img/sync_terminal_folder.gif" alt="..."></p>
+          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>Local transfer has fast speed for copying and deleting, especially for huge files and large number of small files.</p>
+<p>Test environment: Windows 10, SSD.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Benchmark: Copy files</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><img src="/img/performance_local_transfer_file.png" alt="..."></td>
+</tr>
+<tr>
+<td align="center">Source file: A <code>vmdk</code> file.</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="center">Benchmark: Copy folders</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><img src="/img/performance_local_transfer_folder.png" alt="..."></td>
+</tr>
+<tr>
+<td align="center">Source folder: The subfolder <code>src</code> within the <a target="_blank" rel="noopener" href="https://download.qt.io/official_releases/qt/5.15/5.15.2/submodules/qtbase-everywhere-src-5.15.2.zip">qtbase-everywhere-src-5.15.2.zip</a> file.</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="center">Benchmark: Remove folders</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><img src="/img/performance_local_transfer_remove_folder.png" alt="..."></td>
+</tr>
+<tr>
+<td align="center">Source folder: The subfolder <code>src</code> within the <a target="_blank" rel="noopener" href="https://download.qt.io/official_releases/qt/5.15/5.15.2/submodules/qtbase-everywhere-src-5.15.2.zip">qtbase-everywhere-src-5.15.2.zip</a> file.</td>
+</tr>
+</tbody></table>
 
       
     </div>
@@ -513,7 +451,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2022/08/21/sysmon/">
+    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2023/11/15/manage-sessions/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -531,7 +469,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/08/21/sysmon/" class="post-title-link" itemprop="url">WindTerm - Sysmon</a>
+          <a href="/2023/11/15/manage-sessions/" class="post-title-link" itemprop="url">WindTerm - Manage Sessions</a>
         </h2>
 
         <div class="post-meta-container">
@@ -541,15 +479,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2022-08-21 12:23:41" itemprop="dateCreated datePublished" datetime="2022-08-21T12:23:41+08:00">2022-08-21</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-08-22 17:07:19" itemprop="dateModified" datetime="2022-08-22T17:07:19+08:00">2022-08-22</time>
+      <time title="Created: 2023-11-15 11:29:11 / Modified: 12:57:33" itemprop="dateCreated datePublished" datetime="2023-11-15T11:29:11+08:00">2023-11-15</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -571,16 +503,16 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p><code>Sysmon</code> allows you to monitor the usage of system resources such as the <code>time</code>, <code>uptime</code>, <code>CPU</code>, <code>memory</code>, <code>network</code>, etc. of the local machine or remote server.</p>
-<p><code>Sysmon</code> supports:</p>
+          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>Use shortcut menu in Session Tree to manage sessions.</p>
+<h1 id="Management"><a href="#Management" class="headerlink" title="Management"></a>Management</h1><p>Seven types of session management are supported now.</p>
 <ul>
-<li>Linux (SSH, Shell)</li>
-<li>macOS (SSH, Shell)</li>
-<li>Cmd</li>
-<li>PowerShell</li>
-<li>Windows Subsystem for Linux</li>
+<li>Move and duplicate <img src="/img/move_session.gif" alt="..."></li>
+<li>Label <img src="/img/label_session.gif" alt="..."></li>
+<li>Group <img src="/img/group_session.gif" alt="..."></li>
+<li>Delete <img src="/img/delete_session.gif" alt="..."></li>
+<li>Property <img src="/img/property_session.gif" alt="..."></li>
+<li>Filter <img src="/img/filter_session.gif" alt="..."></li>
 </ul>
-<h1 id="Sysmon"><a href="#Sysmon" class="headerlink" title="Sysmon"></a>Sysmon</h1><p><img src="/img/sysmon.gif" alt="..."></p>
 
       
     </div>
@@ -607,7 +539,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2022/06/20/auto_completion_history_commands/">
+    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2023/06/07/highlight_text_bar/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -625,7 +557,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/06/20/auto_completion_history_commands/" class="post-title-link" itemprop="url">WindTerm - Auto Completion / History Commands</a>
+          <a href="/2023/06/07/highlight_text_bar/" class="post-title-link" itemprop="url">WindTerm - Highlight Text / Highlight Text Bar</a>
         </h2>
 
         <div class="post-meta-container">
@@ -637,7 +569,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-06-20 03:28:05 / Modified: 03:34:59" itemprop="dateCreated datePublished" datetime="2022-06-20T03:28:05+08:00">2022-06-20</time>
+      <time title="Created: 2023-06-07 08:02:32 / Modified: 22:21:45" itemprop="dateCreated datePublished" datetime="2023-06-07T08:02:32+08:00">2023-06-07</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -659,16 +591,88 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>Auto completion supports <code>history commands</code>. <code>History commands</code> include not only the command history of the current session, but also the command history of all sessions of the same <code>System</code>, such as the <code>Linux</code> system. </p>
-<p>If and only if the <code>master password</code> is entered, the <code>history commands</code> can be encrypted and stored. The default maximum number of <code>history commands</code> is <code>10000</code>.</p>
-<p>If you only want to use the history commands for auto completion, you can：</p>
-<ul>
-<li>Type <code>!</code> at the beginning of the line.</li>
-<li>Use the shortcut key <code>Ctrl+R</code>.</li>
-</ul>
-<h1 id="Auto-Completion"><a href="#Auto-Completion" class="headerlink" title="Auto Completion"></a>Auto Completion</h1><ul>
-<li>History Commands<img src="/img/auto_completion_history_commands.gif" alt="..."></li>
-</ul>
+          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p><code>Highlight Text Bar</code> supports quickly marking text with preset background colors and also allows for quickly removing current text markup.</p>
+<h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/highlight_text_bar.gif" alt="..."></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2023/06/07/highlight_text_dialog/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="KingToolbox">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WindTerm and WindEdit">
+      <meta itemprop="description" content="Usage for WindTerm and WindEdit">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | WindTerm and WindEdit">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/06/07/highlight_text_dialog/" class="post-title-link" itemprop="url">WindTerm - Highlight Text / Highlight Text Dialog</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2023-06-07 07:55:08 / Modified: 22:21:35" itemprop="dateCreated datePublished" datetime="2023-06-07T07:55:08+08:00">2023-06-07</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/WindTerm/" itemprop="url" rel="index"><span itemprop="name">WindTerm</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p><code>Highligh Text Dialog</code> supports adding, modifying, and deleting <code>text mark</code> rules. Compared to <a href="/2023/06/07/highlight_text_bar/" title="WindTerm - Highlight Text &#x2F; Highlight Text Bar">Highlight Text Bar</a>, <code>Highligh Text Dialog</code> can provide more detailed settings for <code>text mark</code> rules.</p>
+<h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/highlight_text_dialog.gif" alt="..."></p>
 
       
     </div>
@@ -688,7 +692,7 @@
 
 
   <nav class="pagination">
-    <a class="extend prev" rel="prev" title="Previous page" aria-label="Previous page" href="/page/5/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/26/">26</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/page/7/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" title="Previous page" aria-label="Previous page" href="/page/5/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/30/">30</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/page/7/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 </div>
@@ -699,7 +703,7 @@
 
   <div class="copyright">
     &copy; 2019 – 
-    <span itemprop="copyrightYear">2024</span>
+    <span itemprop="copyrightYear">2025</span>
     <span class="with-love">
       <i class="fa fa-heart"></i>
     </span>

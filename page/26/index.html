@@ -150,7 +150,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">127</span>
+          <span class="site-state-item-count">149</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -161,7 +161,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">110</span>
+        <span class="site-state-item-count">117</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -187,7 +187,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2020/01/21/400m-long-line-file/">
+    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2020/06/20/sender-send-char/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -205,7 +205,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/01/21/400m-long-line-file/" class="post-title-link" itemprop="url">WindEdit - 400Mb Long Line File</a>
+          <a href="/2020/06/20/sender-send-char/" class="post-title-link" itemprop="url">WindTerm - Sender Pane / Send Chars</a>
         </h2>
 
         <div class="post-meta-container">
@@ -216,14 +216,14 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2020-01-21 15:53:48" itemprop="dateCreated datePublished" datetime="2020-01-21T15:53:48+08:00">2020-01-21</time>
+      <time title="Created: 2020-06-20 04:08:22" itemprop="dateCreated datePublished" datetime="2020-06-20T04:08:22+08:00">2020-06-20</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2020-06-23 03:24:57" itemprop="dateModified" datetime="2020-06-23T03:24:57+08:00">2020-06-23</time>
+      <time title="Modified: 2021-04-23 05:48:30" itemprop="dateModified" datetime="2021-04-23T05:48:30+08:00">2021-04-23</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -231,7 +231,7 @@
       </span>
       <span class="post-meta-item-text">In</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/WindEdit/" itemprop="url" rel="index"><span itemprop="name">WindEdit</span></a>
+          <a href="/categories/WindTerm/" itemprop="url" rel="index"><span itemprop="name">WindTerm</span></a>
         </span>
     </span>
 
@@ -245,30 +245,82 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>WindEdit can open a huge file contains only one line.</p>
-<h1 id="One-Line-Huge-File"><a href="#One-Line-Huge-File" class="headerlink" title="One Line Huge File"></a>One Line Huge File</h1><p>For example: Open 400MB one line huge file only cost 14MB memory.</p>
-<p>Test platform: windows 10 - 2.3 GHz Intel Core i5 and 8GB memory and ssd.</p>
+          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>Sender pane supports sending text char by char at specified intervals. The minimum interval is 20ms.</p>
+<p>The following escape characters can be used in the sent text:</p>
 <table>
 <thead>
 <tr>
-<th></th>
-<th align="center">one line, 400MB</th>
+<th>Char</th>
+<th align="center">Description</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>elapsed</td>
-<td align="center">0.95s</td>
+<td>\0</td>
+<td align="center">null (NUL, 0x00)</td>
 </tr>
 <tr>
-<td>memory (before)</td>
-<td align="center">19.2MB</td>
+<td>\a</td>
+<td align="center">bell (BEL, 0x07)</td>
 </tr>
 <tr>
-<td>memory (after)</td>
-<td align="center">33.6MB</td>
+<td>\b</td>
+<td align="center">backspace (BS, 0x08)</td>
+</tr>
+<tr>
+<td>\t</td>
+<td align="center">horizontal tab (HT, 0x09)</td>
+</tr>
+<tr>
+<td>\n</td>
+<td align="center">line feed (LF, 0x0A)</td>
+</tr>
+<tr>
+<td>\v</td>
+<td align="center">vertical tab (VT, 0x0B)</td>
+</tr>
+<tr>
+<td>\f</td>
+<td align="center">form feed (FF, 0x0C)</td>
+</tr>
+<tr>
+<td>\r</td>
+<td align="center">carriage return (CR, 0x0D)</td>
+</tr>
+<tr>
+<td>\</td>
+<td align="center">backslash (0x5C)</td>
+</tr>
+<tr>
+<td>\nnn</td>
+<td align="center">octal char</td>
+</tr>
+<tr>
+<td>\xHH</td>
+<td align="center">hexadecimal char</td>
+</tr>
+<tr>
+<td>\uHHHH</td>
+<td align="center">wide hexadecimal char</td>
+</tr>
+<tr>
+<td>\cx</td>
+<td align="center">control char, like <code>Ctrl+C</code></td>
+</tr>
+<tr>
+<td>\c-x</td>
+<td align="center">control char, like <code>Ctrl+C</code></td>
+</tr>
+<tr>
+<td>\mx</td>
+<td align="center">meta char (x | 0x80), like <code>Meta+X</code></td>
+</tr>
+<tr>
+<td>\m-x</td>
+<td align="center">meta char (x | 0x80), like <code>Meta+X</code></td>
 </tr>
 </tbody></table>
-<p><img src="/img/windedit_long_line_performance.gif" alt="..."></p>
+<p>For example, either <code>\003</code> or <code>\x03</code> or <code>\u0003</code> or <code>\cc</code> or <code>\c-c</code> can be used to send the key <code>Ctrl+C</code>(same as the ASCII character <code>EXT, 0x03</code>).</p>
+<h1 id="Send-Chars"><a href="#Send-Chars" class="headerlink" title="Send Chars"></a>Send Chars</h1><p><img src="/img/sender_send_char.gif" alt="..."></p>
 
       
     </div>
@@ -295,7 +347,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2020/01/21/10g-huge-file/">
+    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2020/06/20/sender-send-hex/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -313,7 +365,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/01/21/10g-huge-file/" class="post-title-link" itemprop="url">WindEdit - 10Gb Huge File</a>
+          <a href="/2020/06/20/sender-send-hex/" class="post-title-link" itemprop="url">WindTerm - Sender Pane / Send Hex Data</a>
         </h2>
 
         <div class="post-meta-container">
@@ -324,7 +376,7 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2020-01-21 15:53:41" itemprop="dateCreated datePublished" datetime="2020-01-21T15:53:41+08:00">2020-01-21</time>
+      <time title="Created: 2020-06-20 04:03:19" itemprop="dateCreated datePublished" datetime="2020-06-20T04:03:19+08:00">2020-06-20</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -339,7 +391,7 @@
       </span>
       <span class="post-meta-item-text">In</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/WindEdit/" itemprop="url" rel="index"><span itemprop="name">WindEdit</span></a>
+          <a href="/categories/WindTerm/" itemprop="url" rel="index"><span itemprop="name">WindTerm</span></a>
         </span>
     </span>
 
@@ -353,30 +405,292 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>WindEdit can open very huge file with a little memory.</p>
-<h1 id="Huge-File"><a href="#Huge-File" class="headerlink" title="Huge File"></a>Huge File</h1><p>For example: Open 10Gb huge file only cost 35MB memory.</p>
-<p>Test platform: windows 10 - 2.3 GHz Intel Core i5 and 8GB memory and ssd.</p>
-<table>
+          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>Sender pane supports sending hex data by blocks or chars at specified intervals. The minimum interval is 0.1s(by blocks) or 20ms(by chars).</p>
+<h1 id="Send-Hex-Data"><a href="#Send-Hex-Data" class="headerlink" title="Send Hex Data"></a>Send Hex Data</h1><p><img src="/img/sender_send_hex.gif" alt="..."></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2020/06/20/sender-select-targets/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="KingToolbox">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WindTerm and WindEdit">
+      <meta itemprop="description" content="Usage for WindTerm and WindEdit">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | WindTerm and WindEdit">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/06/20/sender-select-targets/" class="post-title-link" itemprop="url">WindTerm - Sender Pane / Select Targets</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2020-06-20 03:59:02" itemprop="dateCreated datePublished" datetime="2020-06-20T03:59:02+08:00">2020-06-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2020-06-23 03:24:57" itemprop="dateModified" datetime="2020-06-23T03:24:57+08:00">2020-06-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/WindTerm/" itemprop="url" rel="index"><span itemprop="name">WindTerm</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>Sender pane supports selecting the target sessions to be sent, including all sessions, the current session and the selected sessions.</p>
+<h1 id="Select-Targets"><a href="#Select-Targets" class="headerlink" title="Select Targets"></a>Select Targets</h1><p><img src="/img/sender_select_targets.gif" alt="..."></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2020/06/20/sender-add-remove/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="KingToolbox">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WindTerm and WindEdit">
+      <meta itemprop="description" content="Usage for WindTerm and WindEdit">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | WindTerm and WindEdit">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/06/20/sender-add-remove/" class="post-title-link" itemprop="url">WindTerm - Sender Pane / Add And Remove Sender</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2020-06-20 03:56:16" itemprop="dateCreated datePublished" datetime="2020-06-20T03:56:16+08:00">2020-06-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2020-06-23 03:24:57" itemprop="dateModified" datetime="2020-06-23T03:24:57+08:00">2020-06-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/WindTerm/" itemprop="url" rel="index"><span itemprop="name">WindTerm</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>Sender pane supports multiple senders to send simultaneously.</p>
+<h1 id="Add-And-Remove-Sender"><a href="#Add-And-Remove-Sender" class="headerlink" title="Add And Remove Sender"></a>Add And Remove Sender</h1><p><img src="/img/sender_add_remove.gif" alt="..."></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2020/06/20/sender-shortcuts/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="KingToolbox">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WindTerm and WindEdit">
+      <meta itemprop="description" content="Usage for WindTerm and WindEdit">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | WindTerm and WindEdit">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/06/20/sender-shortcuts/" class="post-title-link" itemprop="url">WindTerm - Sender Pane / Keyboard Shortcuts</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2020-06-20 03:50:36" itemprop="dateCreated datePublished" datetime="2020-06-20T03:50:36+08:00">2020-06-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2020-06-23 03:24:57" itemprop="dateModified" datetime="2020-06-23T03:24:57+08:00">2020-06-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/WindTerm/" itemprop="url" rel="index"><span itemprop="name">WindTerm</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><table>
 <thead>
 <tr>
-<th></th>
-<th align="center">10Gb</th>
+<th>Shortcut</th>
+<th align="center">Action</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>elapsed</td>
-<td align="center">19.72s</td>
+<td>Alt+Enter</td>
+<td align="center">Send</td>
 </tr>
 <tr>
-<td>memory (before)</td>
-<td align="center">19.1MB</td>
+<td>Alt+Q</td>
+<td align="center">Stop</td>
 </tr>
 <tr>
-<td>memory (after)</td>
-<td align="center">55.0MB</td>
+<td>Alt+&#x3D;</td>
+<td align="center">Add Sender</td>
+</tr>
+<tr>
+<td>Alt+-</td>
+<td align="center">Remove Sender</td>
+</tr>
+<tr>
+<td>Alt+X</td>
+<td align="center">Clear Sender</td>
 </tr>
 </tbody></table>
-<p><img src="/img/windedit_10g_performance.gif" alt="..."></p>
 
       
     </div>
@@ -396,7 +710,7 @@
 
 
   <nav class="pagination">
-    <a class="extend prev" rel="prev" title="Previous page" aria-label="Previous page" href="/page/25/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/25/">25</a><span class="page-number current">26</span>
+    <a class="extend prev" rel="prev" title="Previous page" aria-label="Previous page" href="/page/25/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/25/">25</a><span class="page-number current">26</span><a class="page-number" href="/page/27/">27</a><span class="space">&hellip;</span><a class="page-number" href="/page/30/">30</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/page/27/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 </div>
@@ -407,7 +721,7 @@
 
   <div class="copyright">
     &copy; 2019 – 
-    <span itemprop="copyrightYear">2024</span>
+    <span itemprop="copyrightYear">2025</span>
     <span class="with-love">
       <i class="fa fa-heart"></i>
     </span>

@@ -4,6 +4,664 @@
   
     
     <entry>
+      <title>WindTerm - Tmux Integration</title>
+      <link href="/2025/01/05/tmux-integration/"/>
+      <url>/2025/01/05/tmux-integration/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p><code>WindTerm</code> offers seamless <code>Tmux Integration</code>, making it easier and more efficient for you to work with <code>tmux</code>. With this integration, tmux sessions, windows, and panes are mapped and displayed in the native user interface. All commonly used tmux features are fully supported, creating a near-perfect fusion between tmux and <code>WindTerm</code>.</p><p>Moreover, you can not only leverage the full power of tmux but also take advantage of <code>WindTerm</code>‘s advanced features, such as syntax highlighting, <a href="/2020/01/22/search-and-mark/" title="WindTerm - Search And Mark">search and mark</a>, <a href="/tags/highlight-text/">highlight text</a>, <a href="/tags/trigger/">triggers</a>, <a href="/tags/onekey/">OneKey</a> and so on. This deep integration delivers an unparalleled <code>tmux</code> experience, streamlining your workflow and boosting productivity like never before.</p><h1 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h1><p>You can use tmux commands as you normally would. To enter <code>tmux integration</code> mode, simply add <code>-CC</code>. For example:</p><ul><li>tmux -CC</li><li>tmux -CC attach</li></ul><p>Exiting <code>tmux integration</code> mode is just as easy, simply press <code>Enter</code> in the <code>tmux</code> tab. For further information, please consult the usage instructions for each feature below.</p><ul><li><a href="/2025/01/05/tmux_common-keyboard-shortcuts/" title="WindTerm - Tmux Integration &#x2F; Common Keyboard Shortcuts">Common Shortcut Keys</a></li><li><a href="/2025/01/05/tmux_attach-session/" title="WindTerm - Tmux Integration &#x2F; Attach Session">Attach Session</a></li><li><a href="/2025/01/05/tmux_detach-session/" title="WindTerm - Tmux Integration &#x2F; Detach Session">Detach Session</a></li><li><a href="/2025/01/05/tmux_execute-tmux-command/" title="WindTerm - Tmux Integration &#x2F; Execute Tmux Command">Execute Tmux Command</a></li><li><a href="/2025/01/05/tmux_kill-pane/" title="WindTerm - Tmux Integration &#x2F; Kill Pane">Kill Pane</a></li><li><a href="/2025/01/05/tmux_kill-window/" title="WindTerm - Tmux Integration &#x2F; Kill Window">Kill Window</a></li><li><a href="/2025/01/05/tmux_kill-session/" title="WindTerm - Tmux Integration &#x2F; Kill Session">Kill Session</a></li><li><a href="/2025/01/05/tmux_move-pane-to-new-window/" title="WindTerm - Tmux Integration &#x2F; Move Pane To New Window">Move Pane To New Window</a></li><li><a href="/2025/01/05/tmux_new-window/" title="WindTerm - Tmux Integration &#x2F; New Window">New Window</a></li><li><a href="/2025/01/05/tmux_rename-pane/" title="WindTerm - Tmux Integration &#x2F; Rename Pane">Rename Pane</a></li><li><a href="/2025/01/05/tmux_rename-window/" title="WindTerm - Tmux Integration &#x2F; Rename Window">Rename Window</a></li><li><a href="/2025/01/05/tmux_rename-session/" title="WindTerm - Tmux Integration &#x2F; Rename Session">Rename Session</a></li><li><a href="/2025/01/05/tmux_resize-pane/" title="WindTerm - Tmux Integration &#x2F; Resize Pane">Resize Pane</a></li><li><a href="/2025/01/05/tmux_select-layout/" title="WindTerm - Tmux Integration &#x2F; Select Layout">Select Layout</a></li><li><a href="/2025/01/05/tmux_select-pane/" title="WindTerm - Tmux Integration &#x2F; Select Pane">Select Pane</a></li><li><a href="/2025/01/05/tmux_select-window/" title="WindTerm - Tmux Integration &#x2F; Select Window">Select Window</a></li><li><a href="/2025/01/05/tmux_split-pane/" title="WindTerm - Tmux Integration &#x2F; Split Pane">Split Pane</a></li><li><a href="/2025/01/05/tmux_swap-pane/" title="WindTerm - Tmux Integration &#x2F; Swap Pane">Swap Pane</a></li><li><a href="/2025/01/05/tmux_swap-window/" title="WindTerm - Tmux Integration &#x2F; Swap Window">Swap Window</a></li><li><a href="/2025/01/05/tmux_synchronize-panes/" title="WindTerm - Tmux Integration &#x2F; Synchronize Panes">Synchronize Panes</a></li><li><a href="/2025/01/05/tmux_toggle-pane-zoom/" title="WindTerm - Tmux Integration &#x2F; Toggle Pane Zoom">Toggle Pane Zoom</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> WindTerm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windterm </tag>
+            
+            <tag> tmux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WindTerm - Tmux Integration / Common Keyboard Shortcuts</title>
+      <link href="/2025/01/05/tmux_common-keyboard-shortcuts/"/>
+      <url>/2025/01/05/tmux_common-keyboard-shortcuts/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>The keyboard shortcuts in <code>tmux integration</code> mode allow you to easily select panes, select windows, split panes, and more. The shortcuts are designed to align with standard tmux keybindings as much as possible. For instance, to zoom a pane, which is usually <code>ctrl+b Z</code> in tmux, you just press <code>alt+Z</code> here, making it intuitive and easy to recall.</p><table><thead><tr><th>Shortcut</th><th>Action</th></tr></thead><tbody><tr><td>Alt + B</td><td>Show <code>Mux/Tmux</code> Command Palette</td></tr><tr><td>Alt + X</td><td>Close the current pane</td></tr><tr><td>Alt + Z</td><td>Zoom the current pane</td></tr><tr><td>Alt + Left Arrow</td><td>Select the left pane</td></tr><tr><td>Alt + Right Arrow</td><td>Select the right pane</td></tr><tr><td>Alt + Up Arrow</td><td>Select the pane above</td></tr><tr><td>Alt + Down Arrow</td><td>Select the pane below</td></tr><tr><td>Alt + [</td><td>Select the previous window</td></tr><tr><td>Alt + ]</td><td>Select the next winodw</td></tr><tr><td>Alt + -</td><td>Split pane right</td></tr><tr><td>Alt + Shift + -</td><td>Split pane left</td></tr><tr><td>Alt + |</td><td>Split pane down</td></tr><tr><td>Alt + Shift + |</td><td>Split pane up</td></tr><tr><td>Ctrl + Shift + A</td><td>Select all text</td></tr><tr><td>Ctrl + Shift + C</td><td>Copy selected text</td></tr><tr><td>Ctrl + Shift + V</td><td>Paste text</td></tr><tr><td>Ctrl + Shift + F</td><td>Search text</td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> WindTerm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windterm </tag>
+            
+            <tag> keyboard </tag>
+            
+            <tag> shortcuts </tag>
+            
+            <tag> tmux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WindTerm - Tmux Integration / Attach Session</title>
+      <link href="/2025/01/05/tmux_attach-session/"/>
+      <url>/2025/01/05/tmux_attach-session/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>You can enter <code>tmux integration</code> mode and attach to a specific session using the command <code>tmux -CC attach -t &lt;session_name&gt;</code>.</p><p>Once inside <code>tmux integration</code> mode, running <code>Tmux: Attach Session</code> within the <code>Mux/Tmux Command Palette</code> allows you to switch to a different session too.</p><h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/tmux_attach_session.gif" alt="..."></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> WindTerm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windterm </tag>
+            
+            <tag> session </tag>
+            
+            <tag> tmux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WindTerm - Tmux Integration / Detach Session</title>
+      <link href="/2025/01/05/tmux_detach-session/"/>
+      <url>/2025/01/05/tmux_detach-session/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>You can detach a session in two ways:</p><ul><li>Pressing <code>Enter</code> in the <code>tmux</code> tab.</li><li>Running <code>Tmux: Detach Session</code> within the <code>Mux/Tmux Command Palette</code>.</li></ul><h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/tmux_detach_session.gif" alt="..."></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> WindTerm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windterm </tag>
+            
+            <tag> session </tag>
+            
+            <tag> tmux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WindTerm - Tmux Integration / Execute Tmux Command</title>
+      <link href="/2025/01/05/tmux_execute-tmux-command/"/>
+      <url>/2025/01/05/tmux_execute-tmux-command/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>You can execute any tmux command by running <code>Tmux: Execute Tmux Command</code> within the <code>Mux/Tmux Command Palette</code>. However, this should rarely be necessary, as <code>WindTerm</code> provides more convenient interactions for almost all common tmux commands.</p><h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/tmux_execute_tmux_command.gif" alt="..."></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> WindTerm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windterm </tag>
+            
+            <tag> tmux </tag>
+            
+            <tag> command </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WindTerm - Tmux Integration / Kill Pane</title>
+      <link href="/2025/01/05/tmux_kill-pane/"/>
+      <url>/2025/01/05/tmux_kill-pane/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>You can kill a pane in three ways:</p><ul><li>Click the pane’s close button.</li><li>Press <code>Alt + X</code> in the current pane. </li><li>Running <code>Tmux: Kill Pane</code> within the <code>Mux/Tmux Command Palette</code>.</li></ul><h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/tmux_kill_pane.gif" alt="..."></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> WindTerm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windterm </tag>
+            
+            <tag> pane </tag>
+            
+            <tag> tmux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WindTerm - Tmux Integration / Kill Window</title>
+      <link href="/2025/01/05/tmux_kill-window/"/>
+      <url>/2025/01/05/tmux_kill-window/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>You can kill a window in two ways:</p><ul><li>Click the window’s close button.</li><li>Running <code>Tmux: Kill Window</code> within the <code>Mux/Tmux Command Palette</code>.</li></ul><h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/tmux_kill_window.gif" alt="..."></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> WindTerm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windterm </tag>
+            
+            <tag> tmux </tag>
+            
+            <tag> window </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WindTerm - Tmux Integration / Kill Session</title>
+      <link href="/2025/01/05/tmux_kill-session/"/>
+      <url>/2025/01/05/tmux_kill-session/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>You can kill a session by running <code>Tmux: Kill Session</code> within the <code>Mux/Tmux Command Palette</code>.</p><h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/tmux_kill_session.gif" alt="..."></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> WindTerm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windterm </tag>
+            
+            <tag> session </tag>
+            
+            <tag> tmux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WindTerm - Tmux Integration / Move Pane To New Window</title>
+      <link href="/2025/01/05/tmux_move-pane-to-new-window/"/>
+      <url>/2025/01/05/tmux_move-pane-to-new-window/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>You can move a pane to new window in two ways:</p><ul><li>Perform the <code>Move Pane To New Window</code> action from the pane menu.</li><li>Running <code>Mux: Move Pane To New Window</code> within the <code>Mux/Tmux Command Palette</code>.</li></ul><h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/tmux_move_pane_to_new_window.gif" alt="..."></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> WindTerm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windterm </tag>
+            
+            <tag> pane </tag>
+            
+            <tag> tmux </tag>
+            
+            <tag> window </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WindTerm - Tmux Integration / New Window</title>
+      <link href="/2025/01/05/tmux_new-window/"/>
+      <url>/2025/01/05/tmux_new-window/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>You can new window in two ways:</p><ul><li>Click the “New Window” button in the tab bar.</li><li>Running <code>Mux: New Window</code> within the <code>Mux/Tmux Command Palette</code>.</li></ul><h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/tmux_new_window.gif" alt="..."></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> WindTerm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windterm </tag>
+            
+            <tag> tmux </tag>
+            
+            <tag> window </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WindTerm - Tmux Integration / Rename Pane</title>
+      <link href="/2025/01/05/tmux_rename-pane/"/>
+      <url>/2025/01/05/tmux_rename-pane/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>Good pane names make them easier to remember and use. You can rename a pane in the following two ways:</p><ul><li>Double-click the tab text corresponding to the pane.</li><li>Running <code>Mux: Rename Pane</code> within the <code>Mux/Tmux Command Palette</code>.</li></ul><h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/tmux_rename_pane.gif" alt="..."></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> WindTerm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windterm </tag>
+            
+            <tag> pane </tag>
+            
+            <tag> tmux </tag>
+            
+            <tag> rename </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WindTerm - Tmux Integration / Rename Window</title>
+      <link href="/2025/01/05/tmux_rename-window/"/>
+      <url>/2025/01/05/tmux_rename-window/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>Good window names make them easier to remember and use. You can rename a window in the following two ways:</p><ul><li>Double-click the tab text corresponding to the window.</li><li>Running <code>Mux: Rename Window</code> within the <code>Mux/Tmux Command Palette</code>.</li></ul><h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/tmux_rename_window.gif" alt="..."></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> WindTerm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windterm </tag>
+            
+            <tag> tmux </tag>
+            
+            <tag> window </tag>
+            
+            <tag> rename </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WindTerm - Tmux Integration / Rename Session</title>
+      <link href="/2025/01/05/tmux_rename-session/"/>
+      <url>/2025/01/05/tmux_rename-session/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>Good session names make them easier to remember and use. You can rename a session by running <code>Mux: Rename session</code> within the <code>Mux/Tmux Command Palette</code>.</p><h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/tmux_rename_session.gif" alt="..."></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> WindTerm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windterm </tag>
+            
+            <tag> session </tag>
+            
+            <tag> tmux </tag>
+            
+            <tag> rename </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WindTerm - Tmux Integration / Resize Pane</title>
+      <link href="/2025/01/05/tmux_resize-pane/"/>
+      <url>/2025/01/05/tmux_resize-pane/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>Resizing panes in <code>WindTerm</code> is extremely easy: just drag the divider between the panes. Of course, you can also run <code>Mux: Resize pane</code> within the <code>Mux/Tmux Command Palette</code> for more precise resizing.</p><h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/tmux_resize_pane.gif" alt="..."></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> WindTerm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windterm </tag>
+            
+            <tag> pane </tag>
+            
+            <tag> tmux </tag>
+            
+            <tag> resize </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WindTerm - Tmux Integration / Select Layout</title>
+      <link href="/2025/01/05/tmux_select-layout/"/>
+      <url>/2025/01/05/tmux_select-layout/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>You can quickly switch layouts by running <code>Mux: Swicth Layout</code> within the <code>Mux/Tmux Command Palette</code>. There are seven layouts available:</p><ul><li>Even horizontal</li><li>Even vertical</li><li>Main horizontal</li><li>Main horizontal mirrored</li><li>Main vertical</li><li>Main vertical mirrored</li><li>Tiled</li></ul><h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/tmux_select_layout.gif" alt="..."></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> WindTerm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windterm </tag>
+            
+            <tag> tmux </tag>
+            
+            <tag> layout </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WindTerm - Tmux Integration / Select Pane</title>
+      <link href="/2025/01/05/tmux_select-pane/"/>
+      <url>/2025/01/05/tmux_select-pane/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>You can activate any pane by clicking on it. If you prefer not to use the mouse, the shortcut <code>Alt + Left/Right/Up/Down Arrow</code> is the most convenient option. Of course, you can also run <code>Mux: Select Pane Left/Right/Above/Below</code> or <code>Mux: Select Pane</code> within the <code>Mux/Tmux Command Palette</code> to quickly select a pane, even in another window.</p><h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/tmux_select_pane.gif" alt="..."></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> WindTerm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windterm </tag>
+            
+            <tag> pane </tag>
+            
+            <tag> tmux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WindTerm - Tmux Integration / Select Window</title>
+      <link href="/2025/01/05/tmux_select-window/"/>
+      <url>/2025/01/05/tmux_select-window/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>You can activate any window by clicking on it. If you prefer not to use the mouse, the shortcut <code>Alt + [</code> and <code>Alt + ]</code> is the most convenient option. Of course, you can also run <code>Mux: Select Window</code> within the <code>Mux/Tmux Command Palette</code> to quickly select a window.</p><h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/tmux_select_window.gif" alt="..."></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> WindTerm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windterm </tag>
+            
+            <tag> tmux </tag>
+            
+            <tag> window </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WindTerm - Tmux Integration / Split Pane</title>
+      <link href="/2025/01/05/tmux_split-pane/"/>
+      <url>/2025/01/05/tmux_split-pane/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>You can split a pane in the following three ways:</p><ul><li>Perform the <code>Split Pane Left/Right/Up/Down</code> action from the pane menu.</li><li>Press <code>Alt + -</code> or <code>Alt + |</code> in the current pane. </li><li>Running <code>Mux: Split Pane Left/Right/Up/Down</code> within the <code>Mux/Tmux Command Palette</code>.</li></ul><h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/tmux_split_pane.gif" alt="..."></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> WindTerm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windterm </tag>
+            
+            <tag> pane </tag>
+            
+            <tag> split </tag>
+            
+            <tag> tmux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WindTerm - Tmux Integration / Swap Pane</title>
+      <link href="/2025/01/05/tmux_swap-pane/"/>
+      <url>/2025/01/05/tmux_swap-pane/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>You can swap the positions of two panes by running <code>Mux: Swap Pane</code> within the <code>Mux/Tmux Command Palette</code>.</p><h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/tmux_swap_pane.gif" alt="..."></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> WindTerm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windterm </tag>
+            
+            <tag> pane </tag>
+            
+            <tag> tmux </tag>
+            
+            <tag> swap </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WindTerm - Tmux Integration / Swap Window</title>
+      <link href="/2025/01/05/tmux_swap-window/"/>
+      <url>/2025/01/05/tmux_swap-window/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>You can swap the positions of two windows by running <code>Mux: Swap Window</code> within the <code>Mux/Tmux Command Palette</code>.</p><h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/tmux_swap_window.gif" alt="..."></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> WindTerm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windterm </tag>
+            
+            <tag> tmux </tag>
+            
+            <tag> window </tag>
+            
+            <tag> swap </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WindTerm - Tmux Integration / Synchronize Panes</title>
+      <link href="/2025/01/05/tmux_synchronize-panes/"/>
+      <url>/2025/01/05/tmux_synchronize-panes/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>You can toggle synchronized input for all panes in the current window by running <code>Tmux: Synchronize Panes</code> within the <code>Mux/Tmux Command Palette</code>.</p><h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/tmux_synchronize_panes.gif" alt="..."></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> WindTerm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windterm </tag>
+            
+            <tag> pane </tag>
+            
+            <tag> tmux </tag>
+            
+            <tag> synchronize </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WindTerm - Tmux Integration / Toggle Pane Zoom</title>
+      <link href="/2025/01/05/tmux_toggle-pane-zoom/"/>
+      <url>/2025/01/05/tmux_toggle-pane-zoom/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>You can zoom a pane in the following four ways:</p><ul><li>Double-click the empty space in the pane’s title bar.</li><li>Perform the <code>Toggle Pane Zoom</code> action from the pane menu.</li><li>Press <code>Alt + Z</code> in the current pane. </li><li>Running <code>Mux: Toggle Pane Zoom</code> within the <code>Mux/Tmux Command Palette</code>.</li></ul><h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/tmux_toggle_pane_zoom.gif" alt="..."></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> WindTerm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windterm </tag>
+            
+            <tag> pane </tag>
+            
+            <tag> split </tag>
+            
+            <tag> tmux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>WindTerm - OneKey / Autofill</title>
       <link href="/2024/01/20/onekey_autofill/"/>
       <url>/2024/01/20/onekey_autofill/</url>
@@ -977,15 +1635,15 @@
             
             <tag> ui </tag>
             
+            <tag> menu bar </tag>
+            
+            <tag> status bar </tag>
+            
             <tag> focus mode </tag>
             
             <tag> full screen </tag>
             
             <tag> always on top </tag>
-            
-            <tag> menu bar </tag>
-            
-            <tag> status bar </tag>
             
             <tag> quick bar </tag>
             
@@ -1016,6 +1674,8 @@
             
             <tag> pane </tag>
             
+            <tag> layout </tag>
+            
             <tag> ui </tag>
             
             <tag> dock </tag>
@@ -1023,8 +1683,6 @@
             <tag> menu bar </tag>
             
             <tag> status bar </tag>
-            
-            <tag> layout </tag>
             
         </tags>
       
@@ -1508,9 +2166,9 @@
             
             <tag> proxycommand </tag>
             
-            <tag> jump server </tag>
-            
             <tag> proxyjump </tag>
+            
+            <tag> jump server </tag>
             
         </tags>
       
@@ -1747,35 +2405,6 @@
     
     
     <entry>
-      <title>WindTerm - SSH Agent</title>
-      <link href="/2020/08/22/ssh_agent/"/>
-      <url>/2020/08/22/ssh_agent/</url>
-      
-        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>WindTerm supports SSH agent. On the windows platform, currently only pageant is supported.</p><h1 id="SSH-Agent"><a href="#SSH-Agent" class="headerlink" title="SSH Agent"></a>SSH Agent</h1><p><img src="/img/pageant.gif" alt="..."></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> WindTerm </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> windterm </tag>
-            
-            <tag> ssh </tag>
-            
-            <tag> agent </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>WindTerm - SSH Agent Forwading</title>
       <link href="/2020/08/22/ssh_agent_forwarding/"/>
       <url>/2020/08/22/ssh_agent_forwarding/</url>
@@ -1797,6 +2426,35 @@
             <tag> ssh </tag>
             
             <tag> agent forwarding </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WindTerm - SSH Agent</title>
+      <link href="/2020/08/22/ssh_agent/"/>
+      <url>/2020/08/22/ssh_agent/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>WindTerm supports SSH agent. On the windows platform, currently only pageant is supported.</p><h1 id="SSH-Agent"><a href="#SSH-Agent" class="headerlink" title="SSH Agent"></a>SSH Agent</h1><p><img src="/img/pageant.gif" alt="..."></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> WindTerm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windterm </tag>
+            
+            <tag> ssh </tag>
+            
+            <tag> agent </tag>
             
         </tags>
       
@@ -3364,7 +4022,7 @@
       <link href="/2020/01/22/search-and-mark/"/>
       <url>/2020/01/22/search-and-mark/</url>
       
-        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>The content can be searched and all instances of the current word will be marked.</p><h1 id="Search-and-mark"><a href="#Search-and-mark" class="headerlink" title="Search and mark"></a>Search and mark</h1><ul><li>Open search pane (Alt+F)</li><li>Close search pane (Esc)</li></ul><p><img src="/img/search_and_mark.gif" alt="..."></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>The content can be searched and all instances of the current word will be marked.</p><h1 id="Search-and-mark"><a href="#Search-and-mark" class="headerlink" title="Search and mark"></a>Search and mark</h1><ul><li>Open search pane (Ctrl+Shift+F)</li><li>Close search pane (Esc)</li></ul><p><img src="/img/search_and_mark.gif" alt="..."></p>]]></content>
       
       
       <categories>
@@ -3608,9 +4266,9 @@
             
             <tag> windedit </tag>
             
-            <tag> huge file </tag>
-            
             <tag> millions of lines </tag>
+            
+            <tag> huge file </tag>
             
         </tags>
       

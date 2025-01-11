@@ -150,7 +150,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">127</span>
+          <span class="site-state-item-count">149</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -161,7 +161,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">110</span>
+        <span class="site-state-item-count">117</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -187,7 +187,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2020/10/16/automated_logging/">
+    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2021/06/28/ui_focus_mode/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -205,7 +205,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/10/16/automated_logging/" class="post-title-link" itemprop="url">WindTerm - Logging / Automated Logging</a>
+          <a href="/2021/06/28/ui_focus_mode/" class="post-title-link" itemprop="url">WindTerm - UI / Focus Mode</a>
         </h2>
 
         <div class="post-meta-container">
@@ -215,15 +215,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2020-10-16 02:22:22" itemprop="dateCreated datePublished" datetime="2020-10-16T02:22:22+08:00">2020-10-16</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2020-10-17 10:38:27" itemprop="dateModified" datetime="2020-10-17T10:38:27+08:00">2020-10-17</time>
+      <time title="Created: 2021-06-28 01:05:09 / Modified: 11:25:47" itemprop="dateCreated datePublished" datetime="2021-06-28T01:05:09+08:00">2021-06-28</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -245,104 +239,9 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>WindTerm can be configured to start logging automatically upon connecting to the remote site.</p>
-<p>You can start, stop, pause, resume and browse logging at any time also, please read <a href="/2020/10/16/manual_logging/" title="WindTerm - Logging &#x2F; Manual Logging">Manual Logging</a>.</p>
-<p>The following flags can be used in the log file name and each line when logging a session. </p>
-<table>
-<thead>
-<tr>
-<th>Flag</th>
-<th align="center">Output</th>
-<th align="right">Example</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>%a</td>
-<td align="center">Abbreviated weekday name</td>
-<td align="right">“Thu”</td>
-</tr>
-<tr>
-<td>%A</td>
-<td align="center">Full weekday name</td>
-<td align="right">“Thursday”</td>
-</tr>
-<tr>
-<td>%b</td>
-<td align="center">Abbreviated month name</td>
-<td align="right">“Aug”</td>
-</tr>
-<tr>
-<td>%B</td>
-<td align="center">Full month name</td>
-<td align="right">“August”</td>
-</tr>
-<tr>
-<td>%C</td>
-<td align="center">Year in 2 digits</td>
-<td align="right">“20”</td>
-</tr>
-<tr>
-<td>%d</td>
-<td align="center">Day of month 01-31</td>
-<td align="right">“29”</td>
-</tr>
-<tr>
-<td>%e</td>
-<td align="center">Millisecond part of the current second 000-999</td>
-<td align="right">“678”</td>
-</tr>
-<tr>
-<td>%H</td>
-<td align="center">Hours in 24 format 00-23</td>
-<td align="right">“23”</td>
-</tr>
-<tr>
-<td>%I</td>
-<td align="center">Hours in 12 format 01-12</td>
-<td align="right">“11”</td>
-</tr>
-<tr>
-<td>%M</td>
-<td align="center">Minutes 00-59</td>
-<td align="right">“59”</td>
-</tr>
-<tr>
-<td>%m</td>
-<td align="center">Month 01-12</td>
-<td align="right">“11”</td>
-</tr>
-<tr>
-<td>%n</td>
-<td align="center">Session name</td>
-<td align="right">“10.0.1.2”</td>
-</tr>
-<tr>
-<td>%p</td>
-<td align="center">AM&#x2F;PM</td>
-<td align="right">“PM”</td>
-</tr>
-<tr>
-<td>%S</td>
-<td align="center">Seconds 00-59</td>
-<td align="right">“58”</td>
-</tr>
-<tr>
-<td>%v</td>
-<td align="center">The actual text to log</td>
-<td align="right">“some session text”</td>
-</tr>
-<tr>
-<td>%Y</td>
-<td align="center">Year in 4 digits</td>
-<td align="right">“2020”</td>
-</tr>
-<tr>
-<td>%%</td>
-<td align="center">The % sign</td>
-<td align="right">“%”</td>
-</tr>
-</tbody></table>
-<h1 id="Auto-Logging"><a href="#Auto-Logging" class="headerlink" title="Auto Logging"></a>Auto Logging</h1><p><img src="/img/automated_logging.gif" alt="..."></p>
+          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>Focus mode lets you focus on your session output by hiding the specified UI widgets, like the menu bar, panes and so on. You can also specify whether you need full screen display and keep the window always on top.</p>
+<p>Focus mode can be toggled using <code>Focus Mode</code> button in the upper right corner of the menu bar, <code>Mode - Focus Mode</code> menu, <code>command palette</code> or by the shortcut <code>Ctrl+Enter</code>. <code>Ctrl+Enter</code> again exits Focus Mode.</p>
+<h1 id="Focus-Mode"><a href="#Focus-Mode" class="headerlink" title="Focus Mode"></a>Focus Mode</h1><p><img src="/img/ui_focus_mode.gif" alt="..."></p>
 
       
     </div>
@@ -369,7 +268,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2020/09/18/theme/">
+    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2021/06/28/ui_layout/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -387,7 +286,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/09/18/theme/" class="post-title-link" itemprop="url">WindTerm - Theme</a>
+          <a href="/2021/06/28/ui_layout/" class="post-title-link" itemprop="url">WindTerm - UI / Layout</a>
         </h2>
 
         <div class="post-meta-container">
@@ -399,7 +298,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2020-09-18 23:18:04 / Modified: 23:39:58" itemprop="dateCreated datePublished" datetime="2020-09-18T23:18:04+08:00">2020-09-18</time>
+      <time title="Created: 2021-06-28 00:50:00 / Modified: 11:13:21" itemprop="dateCreated datePublished" datetime="2021-06-28T00:50:00+08:00">2021-06-28</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -421,13 +320,93 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>WindTerm supports changing the theme through the menu or command pallete (alt+;). Three themes are supported now. The theme config syntax is compatible with vscode and fully extensible. A document will describe how to design your own theme later.</p>
+          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>There is a layout button in the upper right corner of the menu bar. You can quickly show or hide the menu bar, status bar, dock areas, panes and so on through the menu of the layout button.</p>
+<h1 id="Layout"><a href="#Layout" class="headerlink" title="Layout"></a>Layout</h1><p><img src="/img/ui_layout.gif" alt="..."></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2021/06/28/ui_dock_and_pane/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="KingToolbox">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WindTerm and WindEdit">
+      <meta itemprop="description" content="Usage for WindTerm and WindEdit">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | WindTerm and WindEdit">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/06/28/ui_dock_and_pane/" class="post-title-link" itemprop="url">WindTerm - UI / Dock And Pane</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-06-28 00:35:32 / Modified: 11:06:58" itemprop="dateCreated datePublished" datetime="2021-06-28T00:35:32+08:00">2021-06-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/WindTerm/" itemprop="url" rel="index"><span itemprop="name">WindTerm</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>The dock is used to display and manage the panes. A dock can display multiple panes at the same time. But usually a pane can only be displayed in one dock at a time. The dock menu supports the below actions:</p>
 <ul>
-<li>Dige Black</li>
-<li>Dige Black And White</li>
-<li>Dige White</li>
+<li>Split dock</li>
+<li>Float dock</li>
+<li>Show or hide the specified panes</li>
 </ul>
-<h1 id="Theme"><a href="#Theme" class="headerlink" title="Theme"></a>Theme</h1><p><img src="/img/theme.gif" alt="..."></p>
+<h1 id="Dock-And-Pane"><a href="#Dock-And-Pane" class="headerlink" title="Dock And Pane"></a>Dock And Pane</h1><p><img src="/img/ui_dock_and_pane.gif" alt="..."></p>
 
       
     </div>
@@ -454,7 +433,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2020/09/18/tabbar-change-tabcolor/">
+    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2021/06/28/ui_tab_group/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -472,7 +451,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/09/18/tabbar-change-tabcolor/" class="post-title-link" itemprop="url">WindTerm - Tabbar / Set Tab Color</a>
+          <a href="/2021/06/28/ui_tab_group/" class="post-title-link" itemprop="url">WindTerm - UI / Tab Group</a>
         </h2>
 
         <div class="post-meta-container">
@@ -484,7 +463,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2020-09-18 22:36:02 / Modified: 23:45:38" itemprop="dateCreated datePublished" datetime="2020-09-18T22:36:02+08:00">2020-09-18</time>
+      <time title="Created: 2021-06-28 00:10:08 / Modified: 11:29:05" itemprop="dateCreated datePublished" datetime="2021-06-28T00:10:08+08:00">2021-06-28</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -506,9 +485,13 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>Supports to set the tab color through the shortcut menu of the session tab. Color includes preset colors and custom colors. The tab color will be restored at the next startup.</p>
-<p><img src="/img/tabbar_set_tabcolor_menu.png" alt="..."></p>
-<h1 id="Set-Tab-Color"><a href="#Set-Tab-Color" class="headerlink" title="Set Tab Color"></a>Set Tab Color</h1><p><img src="/img/tabbar_set_tabcolor.gif" alt="..."></p>
+          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>The tab group is used to manage several tabs. In order to facilitate management, each tab group is named, such as <code>A</code>, <code>B</code>, <code>C</code>, etc. A session tab group supports the below actions:</p>
+<ul>
+<li>Split tab group horizontally&#x2F;vertically</li>
+<li>Merge tab group with the specified tab group</li>
+<li>Close tab group</li>
+</ul>
+<h1 id="Tab-Group"><a href="#Tab-Group" class="headerlink" title="Tab Group"></a>Tab Group</h1><p><img src="/img/ui_tab_group.gif" alt="..."></p>
 
       
     </div>
@@ -535,7 +518,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2020/08/22/quickbar/">
+    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2021/06/28/ui_tab/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -553,7 +536,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/08/22/quickbar/" class="post-title-link" itemprop="url">WindTerm - QuickBar</a>
+          <a href="/2021/06/28/ui_tab/" class="post-title-link" itemprop="url">WindTerm - UI / Tab</a>
         </h2>
 
         <div class="post-meta-container">
@@ -563,15 +546,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2020-08-22 06:38:08" itemprop="dateCreated datePublished" datetime="2020-08-22T06:38:08+08:00">2020-08-22</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2021-04-23 05:48:18" itemprop="dateModified" datetime="2021-04-23T05:48:18+08:00">2021-04-23</time>
+      <time title="Created: 2021-06-28 00:06:02 / Modified: 11:32:48" itemprop="dateCreated datePublished" datetime="2021-06-28T00:06:02+08:00">2021-06-28</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -593,168 +570,14 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>Quickbar is a customizable row of buttons you can use for quick access to saved commands. Each command can be configured with label, text to be sent, icon and so on. You can also configure whether to display multiple groups at the same time, display group labels, and display command sets in order.</p>
-<p>The following escape characters can be used in the sent text:</p>
-<table>
-<thead>
-<tr>
-<th>Char</th>
-<th align="center">Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>\0</td>
-<td align="center">null (NUL, 0x00)</td>
-</tr>
-<tr>
-<td>\a</td>
-<td align="center">bell (BEL, 0x07)</td>
-</tr>
-<tr>
-<td>\b</td>
-<td align="center">backspace (BS, 0x08)</td>
-</tr>
-<tr>
-<td>\t</td>
-<td align="center">horizontal tab (HT, 0x09)</td>
-</tr>
-<tr>
-<td>\n</td>
-<td align="center">line feed (LF, 0x0A)</td>
-</tr>
-<tr>
-<td>\v</td>
-<td align="center">vertical tab (VT, 0x0B)</td>
-</tr>
-<tr>
-<td>\f</td>
-<td align="center">form feed (FF, 0x0C)</td>
-</tr>
-<tr>
-<td>\r</td>
-<td align="center">carriage return (CR, 0x0D)</td>
-</tr>
-<tr>
-<td>\</td>
-<td align="center">backslash (0x5C)</td>
-</tr>
-<tr>
-<td>\nnn</td>
-<td align="center">octal char</td>
-</tr>
-<tr>
-<td>\xHH</td>
-<td align="center">hexadecimal char</td>
-</tr>
-<tr>
-<td>\uHHHH</td>
-<td align="center">wide hexadecimal char</td>
-</tr>
-<tr>
-<td>\cx</td>
-<td align="center">control char, like <code>Ctrl+C</code></td>
-</tr>
-<tr>
-<td>\c-x</td>
-<td align="center">control char, like <code>Ctrl+C</code></td>
-</tr>
-<tr>
-<td>\mx</td>
-<td align="center">meta char (x | 0x80), like <code>Meta+X</code></td>
-</tr>
-<tr>
-<td>\m-x</td>
-<td align="center">meta char (x | 0x80), like <code>Meta+X</code></td>
-</tr>
-</tbody></table>
-<p>For example, either <code>\003</code> or <code>\x03</code> or <code>\u0003</code> or <code>\cc</code> or <code>\c-c</code> can be used to send the key <code>Ctrl+C</code>(same as the ASCII character <code>EXT, 0x03</code>).</p>
-<h1 id="QuickBar"><a href="#QuickBar" class="headerlink" title="QuickBar"></a>QuickBar</h1><p><img src="/img/quickbar_commands.gif" alt="QuickBar Commands"><br><img src="/img/quickbar_groups.gif" alt="QuickBar Groups"></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2020/08/22/ssh_agent/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="KingToolbox">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="WindTerm and WindEdit">
-      <meta itemprop="description" content="Usage for WindTerm and WindEdit">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | WindTerm and WindEdit">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/08/22/ssh_agent/" class="post-title-link" itemprop="url">WindTerm - SSH Agent</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2020-08-22 04:10:00" itemprop="dateCreated datePublished" datetime="2020-08-22T04:10:00+08:00">2020-08-22</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-07-25 06:41:01" itemprop="dateModified" datetime="2022-07-25T06:41:01+08:00">2022-07-25</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/WindTerm/" itemprop="url" rel="index"><span itemprop="name">WindTerm</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>WindTerm supports SSH agent. On the windows platform, currently only pageant is supported.</p>
-<h1 id="SSH-Agent"><a href="#SSH-Agent" class="headerlink" title="SSH Agent"></a>SSH Agent</h1><p><img src="/img/pageant.gif" alt="..."></p>
+          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>Sessions are usually opened in tab groups as tabs. A session tab supports the below actions:</p>
+<ul>
+<li>Duplicate tab</li>
+<li>Split tab horizontally&#x2F;vertically</li>
+<li>Split tab to the left&#x2F;right&#x2F;top&#x2F;bottom tab group</li>
+<li>Move tab to the specified tab group</li>
+</ul>
+<h1 id="Tab"><a href="#Tab" class="headerlink" title="Tab"></a>Tab</h1><p><img src="/img/ui_tab.gif" alt="..."></p>
 
       
     </div>
@@ -774,7 +597,7 @@
 
 
   <nav class="pagination">
-    <a class="extend prev" rel="prev" title="Previous page" aria-label="Previous page" href="/page/11/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/page/13/">13</a><span class="space">&hellip;</span><a class="page-number" href="/page/26/">26</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/page/13/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" title="Previous page" aria-label="Previous page" href="/page/11/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/page/13/">13</a><span class="space">&hellip;</span><a class="page-number" href="/page/30/">30</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/page/13/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 </div>
@@ -785,7 +608,7 @@
 
   <div class="copyright">
     &copy; 2019 – 
-    <span itemprop="copyrightYear">2024</span>
+    <span itemprop="copyrightYear">2025</span>
     <span class="with-love">
       <i class="fa fa-heart"></i>
     </span>

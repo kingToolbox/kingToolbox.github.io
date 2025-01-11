@@ -150,7 +150,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">127</span>
+          <span class="site-state-item-count">149</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -161,7 +161,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">110</span>
+        <span class="site-state-item-count">117</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -187,7 +187,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2024/01/20/onekey_autofill/">
+    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2025/01/05/tmux-integration/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -205,7 +205,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/01/20/onekey_autofill/" class="post-title-link" itemprop="url">WindTerm - OneKey / Autofill</a>
+          <a href="/2025/01/05/tmux-integration/" class="post-title-link" itemprop="url">WindTerm - Tmux Integration</a>
         </h2>
 
         <div class="post-meta-container">
@@ -217,7 +217,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2024-01-20 08:12:26 / Modified: 07:25:08" itemprop="dateCreated datePublished" datetime="2024-01-20T08:12:26+08:00">2024-01-20</time>
+      <time title="Created: 2025-01-05 16:12:26 / Modified: 16:43:17" itemprop="dateCreated datePublished" datetime="2025-01-05T16:12:26+08:00">2025-01-05</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -239,12 +239,37 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p><code>OneKey autofill</code> supports the automatic filling in of login credentials, such as usernames and passwords, streamlining the process of logging in to accounts by eliminating the need to manually enter credentials each time. The <code>usernames</code> and <code>passwords</code> defined in both <code>SSH OneKey</code> and <code>Account OneKey</code> support automatic filling.</p>
-<blockquote>
-<p><strong>Security warning</strong></p>
-<p>Please use <code>OneKey autofill</code> in a <strong>SECURE</strong> environment. Even though <code>OneKeys</code> are encrypted, when displaying the autofill list and sending, the encrypted <code>OneKeys</code> will be decrypted. Malicious individuals can also steal <code>usernames</code> and <code>passwords</code> by impersonating logins.</p>
-</blockquote>
-<h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/onekey_autofill.gif" alt="..."></p>
+          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p><code>WindTerm</code> offers seamless <code>Tmux Integration</code>, making it easier and more efficient for you to work with <code>tmux</code>. With this integration, tmux sessions, windows, and panes are mapped and displayed in the native user interface. All commonly used tmux features are fully supported, creating a near-perfect fusion between tmux and <code>WindTerm</code>.</p>
+<p>Moreover, you can not only leverage the full power of tmux but also take advantage of <code>WindTerm</code>‘s advanced features, such as syntax highlighting, <a href="/2020/01/22/search-and-mark/" title="WindTerm - Search And Mark">search and mark</a>, <a href="/tags/highlight-text/">highlight text</a>, <a href="/tags/trigger/">triggers</a>, <a href="/tags/onekey/">OneKey</a> and so on. This deep integration delivers an unparalleled <code>tmux</code> experience, streamlining your workflow and boosting productivity like never before.</p>
+<h1 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h1><p>You can use tmux commands as you normally would. To enter <code>tmux integration</code> mode, simply add <code>-CC</code>. For example:</p>
+<ul>
+<li>tmux -CC</li>
+<li>tmux -CC attach</li>
+</ul>
+<p>Exiting <code>tmux integration</code> mode is just as easy, simply press <code>Enter</code> in the <code>tmux</code> tab. For further information, please consult the usage instructions for each feature below.</p>
+<ul>
+<li><a href="/2025/01/05/tmux_common-keyboard-shortcuts/" title="WindTerm - Tmux Integration &#x2F; Common Keyboard Shortcuts">Common Shortcut Keys</a></li>
+<li><a href="/2025/01/05/tmux_attach-session/" title="WindTerm - Tmux Integration &#x2F; Attach Session">Attach Session</a></li>
+<li><a href="/2025/01/05/tmux_detach-session/" title="WindTerm - Tmux Integration &#x2F; Detach Session">Detach Session</a></li>
+<li><a href="/2025/01/05/tmux_execute-tmux-command/" title="WindTerm - Tmux Integration &#x2F; Execute Tmux Command">Execute Tmux Command</a></li>
+<li><a href="/2025/01/05/tmux_kill-pane/" title="WindTerm - Tmux Integration &#x2F; Kill Pane">Kill Pane</a></li>
+<li><a href="/2025/01/05/tmux_kill-window/" title="WindTerm - Tmux Integration &#x2F; Kill Window">Kill Window</a></li>
+<li><a href="/2025/01/05/tmux_kill-session/" title="WindTerm - Tmux Integration &#x2F; Kill Session">Kill Session</a></li>
+<li><a href="/2025/01/05/tmux_move-pane-to-new-window/" title="WindTerm - Tmux Integration &#x2F; Move Pane To New Window">Move Pane To New Window</a></li>
+<li><a href="/2025/01/05/tmux_new-window/" title="WindTerm - Tmux Integration &#x2F; New Window">New Window</a></li>
+<li><a href="/2025/01/05/tmux_rename-pane/" title="WindTerm - Tmux Integration &#x2F; Rename Pane">Rename Pane</a></li>
+<li><a href="/2025/01/05/tmux_rename-window/" title="WindTerm - Tmux Integration &#x2F; Rename Window">Rename Window</a></li>
+<li><a href="/2025/01/05/tmux_rename-session/" title="WindTerm - Tmux Integration &#x2F; Rename Session">Rename Session</a></li>
+<li><a href="/2025/01/05/tmux_resize-pane/" title="WindTerm - Tmux Integration &#x2F; Resize Pane">Resize Pane</a></li>
+<li><a href="/2025/01/05/tmux_select-layout/" title="WindTerm - Tmux Integration &#x2F; Select Layout">Select Layout</a></li>
+<li><a href="/2025/01/05/tmux_select-pane/" title="WindTerm - Tmux Integration &#x2F; Select Pane">Select Pane</a></li>
+<li><a href="/2025/01/05/tmux_select-window/" title="WindTerm - Tmux Integration &#x2F; Select Window">Select Window</a></li>
+<li><a href="/2025/01/05/tmux_split-pane/" title="WindTerm - Tmux Integration &#x2F; Split Pane">Split Pane</a></li>
+<li><a href="/2025/01/05/tmux_swap-pane/" title="WindTerm - Tmux Integration &#x2F; Swap Pane">Swap Pane</a></li>
+<li><a href="/2025/01/05/tmux_swap-window/" title="WindTerm - Tmux Integration &#x2F; Swap Window">Swap Window</a></li>
+<li><a href="/2025/01/05/tmux_synchronize-panes/" title="WindTerm - Tmux Integration &#x2F; Synchronize Panes">Synchronize Panes</a></li>
+<li><a href="/2025/01/05/tmux_toggle-pane-zoom/" title="WindTerm - Tmux Integration &#x2F; Toggle Pane Zoom">Toggle Pane Zoom</a></li>
+</ul>
 
       
     </div>
@@ -271,7 +296,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2024/01/20/rainbow_brackets/">
+    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2025/01/05/tmux_common-keyboard-shortcuts/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -289,7 +314,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/01/20/rainbow_brackets/" class="post-title-link" itemprop="url">WindTerm - Rainbow Brackets</a>
+          <a href="/2025/01/05/tmux_common-keyboard-shortcuts/" class="post-title-link" itemprop="url">WindTerm - Tmux Integration / Common Keyboard Shortcuts</a>
         </h2>
 
         <div class="post-meta-container">
@@ -299,9 +324,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2024-01-20 07:29:11 / Modified: 07:25:11" itemprop="dateCreated datePublished" datetime="2024-01-20T07:29:11+08:00">2024-01-20</time>
+      <time title="Created: 2025-01-05 16:03:26" itemprop="dateCreated datePublished" datetime="2025-01-05T16:03:26+08:00">2025-01-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2025-01-08 13:39:47" itemprop="dateModified" datetime="2025-01-08T13:39:47+08:00">2025-01-08</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -323,8 +354,83 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>WindTerm supports assigning a unique color to each pair of opening and closing brackets <code>(), [], &#123;&#125; and any customed delimiters</code> to make it easy to identify them and their scope. <code>Rainbow brackets</code> can improve text readability and reduce the likelihood of errors related to mismatched brackets and especially helpful when dealing with complex or nested code structures. Quick selecting the matching pairs via double-clicking or shortcuts is available.</p>
-<h1 id="Rainbow-brackets"><a href="#Rainbow-brackets" class="headerlink" title="Rainbow brackets"></a>Rainbow brackets</h1><p><img src="/img/rainbow_brackets.gif" alt="..."></p>
+          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>The keyboard shortcuts in <code>tmux integration</code> mode allow you to easily select panes, select windows, split panes, and more. The shortcuts are designed to align with standard tmux keybindings as much as possible. For instance, to zoom a pane, which is usually <code>ctrl+b Z</code> in tmux, you just press <code>alt+Z</code> here, making it intuitive and easy to recall.</p>
+<table>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Alt + B</td>
+<td>Show <code>Mux/Tmux</code> Command Palette</td>
+</tr>
+<tr>
+<td>Alt + X</td>
+<td>Close the current pane</td>
+</tr>
+<tr>
+<td>Alt + Z</td>
+<td>Zoom the current pane</td>
+</tr>
+<tr>
+<td>Alt + Left Arrow</td>
+<td>Select the left pane</td>
+</tr>
+<tr>
+<td>Alt + Right Arrow</td>
+<td>Select the right pane</td>
+</tr>
+<tr>
+<td>Alt + Up Arrow</td>
+<td>Select the pane above</td>
+</tr>
+<tr>
+<td>Alt + Down Arrow</td>
+<td>Select the pane below</td>
+</tr>
+<tr>
+<td>Alt + [</td>
+<td>Select the previous window</td>
+</tr>
+<tr>
+<td>Alt + ]</td>
+<td>Select the next winodw</td>
+</tr>
+<tr>
+<td>Alt + -</td>
+<td>Split pane right</td>
+</tr>
+<tr>
+<td>Alt + Shift + -</td>
+<td>Split pane left</td>
+</tr>
+<tr>
+<td>Alt + |</td>
+<td>Split pane down</td>
+</tr>
+<tr>
+<td>Alt + Shift + |</td>
+<td>Split pane up</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + A</td>
+<td>Select all text</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + C</td>
+<td>Copy selected text</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + V</td>
+<td>Paste text</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + F</td>
+<td>Search text</td>
+</tr>
+</tbody></table>
 
       
     </div>
@@ -351,7 +457,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2023/11/15/benchmark-terminal/">
+    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2025/01/05/tmux_attach-session/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -369,7 +475,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/11/15/benchmark-terminal/" class="post-title-link" itemprop="url">WindTerm - Performance / Terminal</a>
+          <a href="/2025/01/05/tmux_attach-session/" class="post-title-link" itemprop="url">WindTerm - Tmux Integration / Attach Session</a>
         </h2>
 
         <div class="post-meta-container">
@@ -381,7 +487,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2023-11-15 12:15:05 / Modified: 12:37:10" itemprop="dateCreated datePublished" datetime="2023-11-15T12:15:05+08:00">2023-11-15</time>
+      <time title="Created: 2025-01-05 16:00:26 / Modified: 16:44:20" itemprop="dateCreated datePublished" datetime="2025-01-05T16:00:26+08:00">2025-01-05</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -403,73 +509,9 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>WindTerm has extremely high performance and low memory consumption.</p>
-<p>Especially when it comes to commands with a massive amount of text output, WindTerm outperforms the majority of terminals in terms of parsing speed, display speed, and memory usage. This makes your work more efficient, giving you more time to enjoy your life.</p>
-<h1 id="Benchmark"><a href="#Benchmark" class="headerlink" title="Benchmark"></a>Benchmark</h1><p>The testing environment used for testing is as follows:<br><code>Hardware: 2.3 GHz Intel Core i5 and 8GB Memory</code><br><code>Software: WSL(Ubuntu 18.04.2), Windows 10</code></p>
-<table>
-<thead>
-<tr>
-<th align="center">Application</th>
-<th align="center">Version</th>
-<th align="center">Release Data</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">WindTerm</td>
-<td align="center">v1.6.0 Prerelease 3</td>
-<td align="center">2023-11-15</td>
-</tr>
-<tr>
-<td align="center">Putty</td>
-<td align="center">v1.79</td>
-<td align="center">2023-08-26</td>
-</tr>
-<tr>
-<td align="center">Windows Terminal</td>
-<td align="center">v1.18.3181.0</td>
-<td align="center">2023-11-15</td>
-</tr>
-</tbody></table>
-<p><strong>All applications are set to scrollback lines to <code>1200000</code> and window size to <code>110x32</code>. Test data is for reference only.</strong><br><em>Note: The maximum scrollback lines for <code>Windows Terminal</code> can only be set to <code>32768</code>. This limitation might have been implemented for performance reasons during its design, so its memory usage has not been tested and is meaningless.</em></p>
-<table>
-<thead>
-<tr>
-<th align="center">Benchmark: Execute commands</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><img src="/img/performance_terminal.png" alt="..."></td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th></th>
-<th align="center">WindTerm</th>
-<th align="center">Putty</th>
-<th align="center">Windows Terminal</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>elapsed</td>
-<td align="center">1.305s</td>
-<td align="center">9.759s</td>
-<td align="center">6.774s</td>
-</tr>
-<tr>
-<td>memory (before)</td>
-<td align="center">33.1MB</td>
-<td align="center">3.7MB</td>
-<td align="center">-</td>
-</tr>
-<tr>
-<td>memory (after)</td>
-<td align="center">49.6MB</td>
-<td align="center">555.5MB</td>
-<td align="center">-</td>
-</tr>
-</tbody></table>
-<h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/windterm_putty_performance.gif" alt="..."></p>
+          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>You can enter <code>tmux integration</code> mode and attach to a specific session using the command <code>tmux -CC attach -t &lt;session_name&gt;</code>.</p>
+<p>Once inside <code>tmux integration</code> mode, running <code>Tmux: Attach Session</code> within the <code>Mux/Tmux Command Palette</code> allows you to switch to a different session too.</p>
+<h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/tmux_attach_session.gif" alt="..."></p>
 
       
     </div>
@@ -496,7 +538,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2023/11/15/benchmark-sftp-transfer/">
+    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2025/01/05/tmux_detach-session/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -514,7 +556,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/11/15/benchmark-sftp-transfer/" class="post-title-link" itemprop="url">WindTerm - Performance / Sftp Transfer</a>
+          <a href="/2025/01/05/tmux_detach-session/" class="post-title-link" itemprop="url">WindTerm - Tmux Integration / Detach Session</a>
         </h2>
 
         <div class="post-meta-container">
@@ -526,7 +568,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2023-11-15 12:00:00 / Modified: 12:40:53" itemprop="dateCreated datePublished" datetime="2023-11-15T12:00:00+08:00">2023-11-15</time>
+      <time title="Created: 2025-01-05 15:58:22 / Modified: 16:44:31" itemprop="dateCreated datePublished" datetime="2025-01-05T15:58:22+08:00">2025-01-05</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -548,73 +590,12 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>Sftp transfer has fast speed for uploading, downloading and deleting, especially for huge files and large number of small files.</p>
-<h1 id="Benchmark"><a href="#Benchmark" class="headerlink" title="Benchmark"></a>Benchmark</h1><p>The testing environment used for testing is as follows:<br><code>Hardware: 2.3 GHz Intel Core i5 and 8GB Memory</code><br><code>Software: WSL(Ubuntu 18.04.2), Windows 10</code></p>
-<table>
-<thead>
-<tr>
-<th align="center">Application</th>
-<th align="center">Version</th>
-<th align="center">Release Data</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">WindTerm</td>
-<td align="center">v1.6.0 Prerelease 3</td>
-<td align="center">2023-11-15</td>
-</tr>
-<tr>
-<td align="center">FileZilla</td>
-<td align="center">v3.66.1</td>
-<td align="center">2023-11-03</td>
-</tr>
-<tr>
-<td align="center">WinSCP</td>
-<td align="center">v6.1.2</td>
-<td align="center">2023-09-19</td>
-</tr>
-</tbody></table>
-<p><strong>All applications use their default configurations, and test data is for reference only.</strong></p>
-<table>
-<thead>
-<tr>
-<th align="center">Benchmark: Transfer files</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><img src="/img/performance_sftp_transfer_file.png" alt="..."></td>
-</tr>
-<tr>
-<td align="center">Source file: A <code>vmdk</code> file.</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th align="center">Benchmark: Transfer folders</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><img src="/img/performance_sftp_transfer_folder.png" alt="..."></td>
-</tr>
-<tr>
-<td align="center">Source folder: The subfolder <code>src</code> within the <a target="_blank" rel="noopener" href="https://download.qt.io/official_releases/qt/5.15/5.15.2/submodules/qtbase-everywhere-src-5.15.2.zip">qtbase-everywhere-src-5.15.2.zip</a> file.</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th align="center">Benchmark: Remove folders</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><img src="/img/performance_sftp_transfer_remove_folder.png" alt="..."></td>
-</tr>
-<tr>
-<td align="center">Source folder: The subfolder <code>src</code> within the <a target="_blank" rel="noopener" href="https://download.qt.io/official_releases/qt/5.15/5.15.2/submodules/qtbase-everywhere-src-5.15.2.zip">qtbase-everywhere-src-5.15.2.zip</a> file.</td>
-</tr>
-</tbody></table>
-<h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/transfer_download_upload_benchmark.gif" alt="..."></p>
+          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>You can detach a session in two ways:</p>
+<ul>
+<li>Pressing <code>Enter</code> in the <code>tmux</code> tab.</li>
+<li>Running <code>Tmux: Detach Session</code> within the <code>Mux/Tmux Command Palette</code>.</li>
+</ul>
+<h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/tmux_detach_session.gif" alt="..."></p>
 
       
     </div>
@@ -641,7 +622,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2023/11/15/benchmark-local-transfer/">
+    <link itemprop="mainEntityOfPage" href="https://kingtoolbox.github.io/2025/01/05/tmux_execute-tmux-command/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -659,7 +640,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/11/15/benchmark-local-transfer/" class="post-title-link" itemprop="url">WindTerm - Performance / Local Transfer</a>
+          <a href="/2025/01/05/tmux_execute-tmux-command/" class="post-title-link" itemprop="url">WindTerm - Tmux Integration / Execute Tmux Command</a>
         </h2>
 
         <div class="post-meta-container">
@@ -671,7 +652,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2023-11-15 11:52:00 / Modified: 12:41:53" itemprop="dateCreated datePublished" datetime="2023-11-15T11:52:00+08:00">2023-11-15</time>
+      <time title="Created: 2025-01-05 15:52:22 / Modified: 08:20:49" itemprop="dateCreated datePublished" datetime="2025-01-05T15:52:22+08:00">2025-01-05</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -693,47 +674,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>Local transfer has fast speed for copying and deleting, especially for huge files and large number of small files.</p>
-<p>Test environment: Windows 10, SSD.</p>
-<table>
-<thead>
-<tr>
-<th align="center">Benchmark: Copy files</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><img src="/img/performance_local_transfer_file.png" alt="..."></td>
-</tr>
-<tr>
-<td align="center">Source file: A <code>vmdk</code> file.</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th align="center">Benchmark: Copy folders</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><img src="/img/performance_local_transfer_folder.png" alt="..."></td>
-</tr>
-<tr>
-<td align="center">Source folder: The subfolder <code>src</code> within the <a target="_blank" rel="noopener" href="https://download.qt.io/official_releases/qt/5.15/5.15.2/submodules/qtbase-everywhere-src-5.15.2.zip">qtbase-everywhere-src-5.15.2.zip</a> file.</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th align="center">Benchmark: Remove folders</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><img src="/img/performance_local_transfer_remove_folder.png" alt="..."></td>
-</tr>
-<tr>
-<td align="center">Source folder: The subfolder <code>src</code> within the <a target="_blank" rel="noopener" href="https://download.qt.io/official_releases/qt/5.15/5.15.2/submodules/qtbase-everywhere-src-5.15.2.zip">qtbase-everywhere-src-5.15.2.zip</a> file.</td>
-</tr>
-</tbody></table>
+          <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>You can execute any tmux command by running <code>Tmux: Execute Tmux Command</code> within the <code>Mux/Tmux Command Palette</code>. However, this should rarely be necessary, as <code>WindTerm</code> provides more convenient interactions for almost all common tmux commands.</p>
+<h1 id="Intro-Video"><a href="#Intro-Video" class="headerlink" title="Intro Video"></a>Intro Video</h1><p><img src="/img/tmux_execute_tmux_command.gif" alt="..."></p>
 
       
     </div>
@@ -753,7 +695,7 @@
 
 
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/26/">26</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/30/">30</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 </div>
@@ -764,7 +706,7 @@
 
   <div class="copyright">
     &copy; 2019 – 
-    <span itemprop="copyrightYear">2024</span>
+    <span itemprop="copyrightYear">2025</span>
     <span class="with-love">
       <i class="fa fa-heart"></i>
     </span>
