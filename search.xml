@@ -1617,7 +1617,7 @@
       <link href="/2021/06/28/ui_focus_mode/"/>
       <url>/2021/06/28/ui_focus_mode/</url>
       
-        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>Focus mode lets you focus on your session output by hiding the specified UI widgets, like the menu bar, panes and so on. You can also specify whether you need full screen display and keep the window always on top.</p><p>Focus mode can be toggled using <code>Focus Mode</code> button in the upper right corner of the menu bar, <code>Mode - Focus Mode</code> menu, <code>command palette</code> or by the shortcut <code>Ctrl+Enter</code>. <code>Ctrl+Enter</code> again exits Focus Mode.</p><h1 id="Focus-Mode"><a href="#Focus-Mode" class="headerlink" title="Focus Mode"></a>Focus Mode</h1><p><img src="/img/ui_focus_mode.gif" alt="..."></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><p>Focus mode lets you focus on your session output by hiding the specified UI widgets, like the menu bar, panes and so on. You can also specify whether you need full screen display and keep the window always on top.</p><p>Focus mode can be toggled using <code>Focus Mode</code> button in the upper right corner of the menu bar, <code>Mode - Focus Mode</code> menu, <code>command palette</code> or by the shortcut <code>Alt+Enter</code>. <code>Alt+Enter</code> again exits Focus Mode.</p><h1 id="Focus-Mode"><a href="#Focus-Mode" class="headerlink" title="Focus Mode"></a>Focus Mode</h1><p><img src="/img/ui_focus_mode.gif" alt="..."></p>]]></content>
       
       
       <categories>
